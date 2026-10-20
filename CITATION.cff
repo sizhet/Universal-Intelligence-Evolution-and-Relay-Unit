@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: >-
+  If you use this research repository, please cite the versioned release
+  using the metadata provided here. Once a Zenodo DOI is assigned, cite
+  the archived release DOI.
+type: software
+title: "Universal Intelligence Evolution and Relay Unit (UIERU): Composable Structural Intelligence, Forward Guidance, Relay, and Validated Evolution"
+authors:
+  - family-names: Tan
+    given-names: Sizhe
+  - name: GPT-Obot
+    affiliation: AI research collaborator
+repository-code: "https://github.com/sizhet/Universal-Intelligence-Evolution-and-Relay-Unit"
+url: "https://github.com/sizhet/Universal-Intelligence-Evolution-and-Relay-Unit"
+version: 1.0.0
+abstract: >-
+  UIERU proposes a composable organizational unit for structural intelligence,
+  integrating governed contracts, calling paths, forward-guiding scoring
+  forests, evidence-preserving structural relay, and independently validated
+  structural evolution. The repository presents architectural research,
+  engineering specifications, illustrative cases, testable hypotheses,
+  and a staged validation roadmap. Proposed advantages are research
+  hypotheses rather than established empirical results.
+keywords:
+  - structural intelligence
+  - intelligence organization
+  - calling path
+  - scoring forest
+  - forward guidance
+  - structural relay
+  - collective learning
+  - recursive self-improvement
+  - subject sovereignty
+  - AI governance
+license: Apache-2.0
