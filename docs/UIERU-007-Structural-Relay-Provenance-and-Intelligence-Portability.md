@@ -14,6 +14,10 @@ Intelligent work rarely ends when an individual task completes. A successor may 
 
 ---
 
+![Fig-006-Structural-Relay-and-Portfolio-Exchange.png](../figures/Fig-006-Structural-Relay-and-Portfolio-Exchange.png)
+
+---
+
 ## 1. Why an Answer Is Not Enough
 
 Consider a neighborhood lawn-service operator who finishes a job and passes the account to another crew. A note reading *“Completed at 3 p.m.”* conveys a result but not the gate code authorization, rain-related route change, equipment limitation, customer's mowing-height preference, photographic evidence, or the untested alternative schedule. A replacement crew cannot safely infer these facts from the completion status.

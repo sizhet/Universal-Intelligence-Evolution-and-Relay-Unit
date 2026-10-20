@@ -16,6 +16,12 @@ An intelligence system that chooses only among familiar execution paths may comp
 
 **Keywords:** UIERU; sandbox threading; multi-trail intelligence; counter-evidence; forward guidance; Calling Graph; Scoring Forest; structural relay; residual-driven evolution; collective learning.
 
+---
+
+![Fig-004-Sandbox-Threading-and-Counter-Evidence.png](../figures/Fig-004-Sandbox-Threading-and-Counter-Evidence.png)
+
+---
+
 ## 1. The Engineering Problem
 
 A workflow typically records or executes a chosen sequence. A planner may compare alternatives, and a test suite may check outputs. These capabilities are useful, but they are often separated across different tools, histories, and responsibility boundaries. As a result, the system may lose the reasoning behind a rejected path, the assumptions behind a passing test, or the context needed by another team to reproduce an experiment.

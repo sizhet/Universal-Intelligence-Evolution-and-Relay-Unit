@@ -21,6 +21,10 @@ The duality is not a claim that execution and scoring are mathematically identic
 
 ---
 
+![Fig-002-Calling-Path-and-Scoring-Forest-Duality.png](../figures/Fig-002-Calling-Path-and-Scoring-Forest-Duality.png)
+
+---
+
 ## 1. A Concrete Task: Guidance Changes the Path
 
 A lawn-care provider is asked to mow a yard before an afternoon event. A simple recorded calling path might be:

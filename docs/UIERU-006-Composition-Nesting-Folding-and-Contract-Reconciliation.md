@@ -14,6 +14,10 @@ An intelligence unit becomes an engineering primitive only if it can participate
 
 ---
 
+![Fig-005-Composable-and-Nested-UIERU.png](../figures/Fig-005-Composable-and-Nested-UIERU.png)
+
+---
+
 ## 1. Engineering Motivation: From One Unit to an Organization
 
 A single UIERU can coordinate a bounded task. A neighborhood lawn-service unit, for example, receives a customer request, evaluates schedules and constraints, performs or delegates work, verifies completion, and relays a record. A landscaping company, however, must coordinate many such units alongside routing, equipment, billing, safety, and customer-service functions. A software engineering organization faces the same structural question with requirements, design, coding, testing, release, and maintenance.

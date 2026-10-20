@@ -19,6 +19,10 @@ We specify a conceptual lifecycle, candidate-scoring model, trail-state machine,
 
 ---
 
+![Fig-003-Forward-Guidance-and-Multi-Trail-Search.png](../figures/Fig-003-Forward-Guidance-and-Multi-Trail-Search.png)
+
+---
+
 ## 1. The Engineering Problem: A Path Is Not Yet Guidance
 
 Consider a service request: restore a malfunctioning application within a fixed maintenance window. A conventional workflow might specify diagnosis, patch, test, deploy, and report. A Calling Graph adds dependencies, alternative branches, and execution history. Yet a useful intelligent controller must also answer:

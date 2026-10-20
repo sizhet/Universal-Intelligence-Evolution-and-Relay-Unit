@@ -17,6 +17,10 @@ An intelligent execution unit becomes more valuable when its validated experienc
 
 ---
 
+![Fig-007-Bidirectional-Collective-Learning-Ecosystem.png](../figures/Fig-007-Bidirectional-Collective-Learning-Ecosystem.png)
+
+---
+
 ## 1. The Engineering Problem: Experience That Does Not Travel
 
 Consider three independent neighborhood lawn-service teams. One discovers that wet grass changes the optimal mowing sequence. Another develops a safer procedure for steep slopes. A third learns that a particular equipment schedule fails when batteries age. If each team merely reports “job complete,” most transferable intelligence disappears. If all teams copy a single standard procedure without checking local conditions, unsafe or ineffective behavior can spread.

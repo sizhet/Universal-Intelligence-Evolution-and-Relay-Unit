@@ -22,6 +22,10 @@ We introduce a compact canonical model, distinguish execution from exploratory t
 
 ---
 
+![Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png](../figures/Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png)
+
+---
+
 ## 1. The Engineering Problem: Intelligence That Works but Does Not Travel Well
 
 Consider a routine lawn-care service. A customer specifies a lawn, quality expectations, a budget, and a deadline. A worker selects tools, checks the weather, performs the work, and receives payment after inspection. If the lawn is wet, the worker may defer mowing or choose another method. If a new technique reduces cost without degrading quality, that technique may be worth testing and reusing.

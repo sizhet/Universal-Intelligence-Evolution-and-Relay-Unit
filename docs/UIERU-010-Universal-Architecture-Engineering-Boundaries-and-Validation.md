@@ -14,6 +14,10 @@ A Universal Intelligence Evolution and Relay Unit (UIERU) is proposed as a compo
 
 ---
 
+![Fig-008-UIERU-Grand-Architecture-and-Structural-Evolution.png](../figures/Fig-008-UIERU-Grand-Architecture-and-Structural-Evolution.png)
+
+---
+
 ## 1. The Problem: Capabilities Exist, but Their Organization Is Fragile
 
 A modern task may involve people, tools, APIs, specialized models, repositories, organizational policies, and successive agents. The individual capabilities may be excellent, yet the overall process can remain difficult to supervise, reproduce, hand off, audit, or improve. In particular:
