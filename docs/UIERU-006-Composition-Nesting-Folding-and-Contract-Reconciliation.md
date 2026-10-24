@@ -14,10 +14,6 @@ An intelligence unit becomes an engineering primitive only if it can participate
 
 ---
 
-![Fig-005-Composable-and-Nested-UIERU.png](../figures/Fig-005-Composable-and-Nested-UIERU.png)
-
----
-
 ## 1. Engineering Motivation: From One Unit to an Organization
 
 A single UIERU can coordinate a bounded task. A neighborhood lawn-service unit, for example, receives a customer request, evaluates schedules and constraints, performs or delegates work, verifies completion, and relays a record. A landscaping company, however, must coordinate many such units alongside routing, equipment, billing, safety, and customer-service functions. A software engineering organization faces the same structural question with requirements, design, coding, testing, release, and maintenance.
@@ -81,6 +77,14 @@ Four useful patterns are:
 | Federated | Independent partners exchange units | Trust, sovereignty, version compatibility |
 
 Hybrid structures are normal. Composition should therefore be modeled as a graph with optional containment edges, not only as a rigid tree.
+
+---
+
+![Fig-005 — Composable and Nested UIERU](../figures/Fig-005-Composable-and-Nested-UIERU.png)
+
+*Figure 5. Sequential, parallel, hierarchical, and federated UIERU composition, with explicit contract reconciliation and evidence-preserving relay boundaries.*
+
+---
 
 ## 4. Calling Graph Composition: Paths, Dependencies, and Recovery
 
@@ -438,16 +442,6 @@ The decisive shift is from merely connecting capabilities to **reconciling their
 This is a research architecture and a testable engineering proposal. Its usefulness must be demonstrated against simpler alternatives, with explicit attention to coordination overhead, failure cases, and contexts where no UIERU wrapping is warranted.
 
 ---
-
-## Figure Placement
-
-Insert the planned illustration after Section 3 or immediately before Section 5:
-
-```markdown
-![Fig-005 — Composable and Nested UIERU](../figures/Fig-005-Composable-and-Nested-UIERU.png)
-
-*Figure 5. Sequential, parallel, hierarchical, and federated UIERU composition, with explicit contract reconciliation and evidence-preserving relay boundaries.*
-```
 
 ## Series Context and Related Research
 

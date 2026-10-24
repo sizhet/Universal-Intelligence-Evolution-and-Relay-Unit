@@ -22,10 +22,6 @@ We introduce a compact canonical model, distinguish execution from exploratory t
 
 ---
 
-![Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png](../figures/Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png)
-
----
-
 ## 1. The Engineering Problem: Intelligence That Works but Does Not Travel Well
 
 Consider a routine lawn-care service. A customer specifies a lawn, quality expectations, a budget, and a deadline. A worker selects tools, checks the weather, performs the work, and receives payment after inspection. If the lawn is wet, the worker may defer mowing or choose another method. If a new technique reduces cost without degrading quality, that technique may be worth testing and reusing.
@@ -98,6 +94,12 @@ The architecture is valuable only where its coordination, governance, transfer, 
 UIERU does not replace language models, neural networks, symbolic reasoning, planning algorithms, APIs, calling graphs, workflow engines, databases, human organizations, or existing agent frameworks. It may **organize** them within a contract-governed functional boundary.
 
 The container-shipping analogy is useful: standard containers can transform logistics while bulk and specialized transport remain necessary. Likewise, selective structural containerization can coexist with non-UIERU execution.
+
+---
+
+![Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png](../figures/Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png)
+
+---
 
 ## 3. From a Recorded Calling Path to a Governed Operational Unit
 
@@ -384,8 +386,6 @@ The remaining papers in this series expand the architecture in a progressive eng
 | **UIERU-010** | Universal architecture, engineering boundaries, and validation |
 
 Four proposed specifications will address the canonical contract, multi-trail lifecycle, relay portfolio exchange, and composition/evolution conformance. Three case studies will test small-scale service, multi-agent software engineering, and large-scale organizational relay.
-
-**Figure placement:** Insert `figures/Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png` after Section 2 when the figure is available. Avoid adding a broken image reference before the asset has been committed.
 
 ## 16. Conclusion
 

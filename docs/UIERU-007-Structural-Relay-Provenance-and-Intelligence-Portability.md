@@ -14,10 +14,6 @@ Intelligent work rarely ends when an individual task completes. A successor may 
 
 ---
 
-![Fig-006-Structural-Relay-and-Portfolio-Exchange.png](../figures/Fig-006-Structural-Relay-and-Portfolio-Exchange.png)
-
----
-
 ## 1. Why an Answer Is Not Enough
 
 Consider a neighborhood lawn-service operator who finishes a job and passes the account to another crew. A note reading *“Completed at 3 p.m.”* conveys a result but not the gate code authorization, rain-related route change, equipment limitation, customer's mowing-height preference, photographic evidence, or the untested alternative schedule. A replacement crew cannot safely infer these facts from the completion status.
@@ -261,6 +257,14 @@ Candidate inclusion can be guided by:
 - privacy, storage, and transfer cost.
 
 A heuristic priority score may help rank candidates, but **hard constraints** such as privacy, authority, and safety must remain gates, not compensable score terms.
+
+---
+
+![Fig-006 — Structural Relay and Portfolio Exchange](../figures/Fig-006-Structural-Relay-and-Portfolio-Exchange.png)
+
+*Figure 6. Contract-governed relay envelope and evidence-aware portfolio exchange, showing provenance, alternative trails, counter-evidence, recipient localization, verification, and bidirectional feedback.*
+
+---
 
 ## 10. Forward Scoring Forest at the Handoff
 
@@ -516,16 +520,6 @@ The practical value of a UIERU is not exhausted by task completion. Its longer-t
 The resulting vision is neither a universal serialization of intelligence nor a mandate to containerize every workflow. It is an engineering proposal for selective, evidence-aware intelligence portability—one that can be measured against simpler handoffs and rejected where its complexity is not justified.
 
 ---
-
-## Figure Placement
-
-Insert the planned figure after Section 9 or before Section 11:
-
-```markdown
-![Fig-006 — Structural Relay and Portfolio Exchange](../figures/Fig-006-Structural-Relay-and-Portfolio-Exchange.png)
-
-*Figure 6. Contract-governed relay envelope and evidence-aware portfolio exchange, showing provenance, alternative trails, counter-evidence, recipient localization, verification, and bidirectional feedback.*
-```
 
 ## Series Context and Related Research
 

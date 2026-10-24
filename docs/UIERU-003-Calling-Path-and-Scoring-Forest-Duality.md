@@ -21,10 +21,6 @@ The duality is not a claim that execution and scoring are mathematically identic
 
 ---
 
-![Fig-002-Calling-Path-and-Scoring-Forest-Duality.png](../figures/Fig-002-Calling-Path-and-Scoring-Forest-Duality.png)
-
----
-
 ## 1. A Concrete Task: Guidance Changes the Path
 
 A lawn-care provider is asked to mow a yard before an afternoon event. A simple recorded calling path might be:
@@ -109,7 +105,11 @@ Calling Path P  <------ guidance ------  Scoring Forest F
              Relay R + Evolution E
 ```
 
-**Figure placement:** Insert `../figures/Fig-002-Calling-Path-and-Scoring-Forest-Duality.png` immediately after this diagram when the image is available. The diagram above remains a text-only fallback.
+---
+
+![Fig-002-Calling-Path-and-Scoring-Forest-Duality.png](../figures/Fig-002-Calling-Path-and-Scoring-Forest-Duality.png)
+
+---
 
 ## 4. The Duality as an Operational Contract
 

@@ -19,10 +19,6 @@ We specify a conceptual lifecycle, candidate-scoring model, trail-state machine,
 
 ---
 
-![Fig-003-Forward-Guidance-and-Multi-Trail-Search.png](../figures/Fig-003-Forward-Guidance-and-Multi-Trail-Search.png)
-
----
-
 ## 1. The Engineering Problem: A Path Is Not Yet Guidance
 
 Consider a service request: restore a malfunctioning application within a fixed maintenance window. A conventional workflow might specify diagnosis, patch, test, deploy, and report. A Calling Graph adds dependencies, alternative branches, and execution history. Yet a useful intelligent controller must also answer:
@@ -145,6 +141,14 @@ Investigate a plausible alternative tool, plan, decomposition, or strategy. The 
 Actively seek counterexamples, boundary failures, hidden dependencies, or reasons the favored path may be wrong. The challenge track need not propose a replacement: its value may be a trustworthy falsification.
 
 The roles can overlap. A trail may begin as exploration and later become the baseline. Some tasks warrant no parallel branches; others warrant several. **Multi-trail is a capability and policy choice, not a mandatory execution pattern.**
+
+---
+
+![Fig-003-Forward-Guidance-and-Multi-Trail-Search.png](../figures/Fig-003-Forward-Guidance-and-Multi-Trail-Search.png)
+
+*Fig. 003. Forward Scoring Forest guides the generation, screening, resource allocation, evaluation, and selective folding of exploit, explore, and challenge trails; evidence and residuals flow into a Relay Portfolio.*
+
+---
 
 ## 7. Threading Tracks and Sandbox Boundaries
 
@@ -424,16 +428,6 @@ The resulting unit can deliver more than a completed task. It can deliver a **Re
 These benefits remain testable propositions, not established universal laws. The practical goal is a selective, composable, and governable way to help existing intelligence capabilities **act, explore, relay, and improve together**.
 
 ---
-
-## Figure Placement
-
-Insert the following planned figure after **Section 6** or at the beginning of **Section 7**:
-
-`../figures/Fig-003-Forward-Guidance-and-Multi-Trail-Search.png`
-
-**Suggested caption:** *Fig. 003. Forward Scoring Forest guides the generation, screening, resource allocation, evaluation, and selective folding of exploit, explore, and challenge trails; evidence and residuals flow into a Relay Portfolio.*
-
-The figure should distinguish offline analysis, sandbox tests, and authorized live execution, and should depict governance gates and feedback loops rather than suggesting that all tracks are executed in production.
 
 ## Research Position and Attribution
 

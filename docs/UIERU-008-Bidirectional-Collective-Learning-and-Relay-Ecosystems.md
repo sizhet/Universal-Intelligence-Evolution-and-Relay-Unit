@@ -17,10 +17,6 @@ An intelligent execution unit becomes more valuable when its validated experienc
 
 ---
 
-![Fig-007-Bidirectional-Collective-Learning-Ecosystem.png](../figures/Fig-007-Bidirectional-Collective-Learning-Ecosystem.png)
-
----
-
 ## 1. The Engineering Problem: Experience That Does Not Travel
 
 Consider three independent neighborhood lawn-service teams. One discovers that wet grass changes the optimal mowing sequence. Another develops a safer procedure for steep slopes. A third learns that a particular equipment schedule fails when batteries age. If each team merely reports “job complete,” most transferable intelligence disappears. If all teams copy a single standard procedure without checking local conditions, unsafe or ineffective behavior can spread.
@@ -111,6 +107,14 @@ The feedback path is as important as the forward path. A rejected procedure may 
 4. **Evolution candidate:** a proposed change with supporting and conflicting evidence.
 
 These objects have different transfer and validation requirements. An outcome may be portable as information while its original procedure is not executable at the destination. An evaluation perspective may be useful for comparison without becoming the receiver's governing policy.
+
+---
+
+![Fig-007 — Bidirectional Collective Learning Ecosystem](../figures/Fig-007-Bidirectional-Collective-Learning-Ecosystem.png)
+
+*Fig-007. UIERUs exchange provenance-aware Relay Portfolios, localize and validate incoming structures, and return counter-evidence, residuals, and structural deltas through governed bidirectional channels.*
+
+---
 
 ## 4. Relay Portfolio: The Unit of Collective Exchange
 
@@ -584,16 +588,6 @@ This paper follows the engineering progression:
 - **UIERU-010:** universal architecture, engineering boundaries, and validation.
 
 The next paper examines how returned evidence and residuals become versioned structural improvements, including recursive but governed modification of the guidance and relay mechanisms themselves.
-
-### 20.1 Figure placement
-
-Insert the planned figure immediately after Section 3 or at the beginning of Section 6:
-
-```markdown
-![Fig-007 — Bidirectional Collective Learning Ecosystem](../figures/Fig-007-Bidirectional-Collective-Learning-Ecosystem.png)
-
-*Fig-007. UIERUs exchange provenance-aware Relay Portfolios, localize and validate incoming structures, and return counter-evidence, residuals, and structural deltas through governed bidirectional channels.*
-```
 
 ## 21. Conclusion
 

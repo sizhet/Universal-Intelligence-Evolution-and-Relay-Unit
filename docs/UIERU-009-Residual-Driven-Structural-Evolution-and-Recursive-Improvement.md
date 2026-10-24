@@ -195,6 +195,14 @@ function evolve(unit U, evidence H, governance G):
 
 The pseudocode intentionally leaves domain-specific estimators and governance decisions as interfaces rather than pretending that one algorithm can solve all evaluation problems.
 
+---
+
+![UIERU Grand Architecture and Structural Evolution](../figures/Fig-008-UIERU-Grand-Architecture-and-Structural-Evolution.png)
+
+*Figure 8. Residuals and counter-evidence drive governed Structural Delta proposals; multi-trail sandboxes, independent evaluation, versioning, and relay connect execution to bounded recursive improvement.*
+
+---
+
 ## 8. A Worked Example: Terrain-Aware Lawn Service
 
 **Baseline:** A service team estimates 45 minutes per small property. Three recent steep-slope jobs took 70–85 minutes. The existing workflow has no terrain category.
@@ -417,19 +425,7 @@ This paper is self-contained, but its interfaces connect to the companion docume
 
 The broader Structural Intelligence research program, including SPO-SI, UCPSF, SIF, and structural recursive self-improvement, provides optional conceptual context rather than a prerequisite for using this paper.
 
-## 20. Figure Placement
-
-Insert the following figure after Section 7 or in the consolidated architecture discussion of UIERU-010:
-
-```markdown
-![UIERU Grand Architecture and Structural Evolution](../figures/Fig-008-UIERU-Grand-Architecture-and-Structural-Evolution.png)
-
-*Figure 8. Residuals and counter-evidence drive governed Structural Delta proposals; multi-trail sandboxes, independent evaluation, versioning, and relay connect execution to bounded recursive improvement.*
-```
-
-The figure should distinguish **execution**, **forward guidance**, **evidence and residual capture**, **sandbox experimentation**, **authorization**, **relay**, and **feedback**, without depicting unreviewed candidate changes as automatically deployable.
-
-## 21. Conclusion
+## 20. Conclusion
 
 The central proposal is that an intelligence unit should be able to learn from the **difference between what it expected, what it did, and what the evidence shows**, and then convert selected differences into tested structural changes. In UIERU, this process is neither simple log accumulation nor unrestricted self-modification. It is a governed sequence connecting residuals to hypotheses, hypotheses to multi-trail experiments, experiments to independently evaluated Structural Deltas, and approved changes to versioned deployment and evidence-preserving relay.
 

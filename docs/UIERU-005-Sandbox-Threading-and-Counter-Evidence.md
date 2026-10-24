@@ -18,10 +18,6 @@ An intelligence system that chooses only among familiar execution paths may comp
 
 ---
 
-![Fig-004-Sandbox-Threading-and-Counter-Evidence.png](../figures/Fig-004-Sandbox-Threading-and-Counter-Evidence.png)
-
----
-
 ## 1. The Engineering Problem
 
 A workflow typically records or executes a chosen sequence. A planner may compare alternatives, and a test suite may check outputs. These capabilities are useful, but they are often separated across different tools, histories, and responsibility boundaries. As a result, the system may lose the reasoning behind a rejected path, the assumptions behind a passing test, or the context needed by another team to reproduce an experiment.
@@ -144,6 +140,12 @@ SANDBOXED --> RUNNING <--> PAUSED
 ```
 
 **Promotion-candidate** is deliberately distinct from production approval. Production deployment requires separate authorization, safety checks, and acceptance under the receiving contract. Threads may be terminated early, but termination reasons and partial evidence should remain available subject to retention and privacy policies.
+
+---
+
+![Fig-004-Sandbox-Threading-and-Counter-Evidence.png](../figures/Fig-004-Sandbox-Threading-and-Counter-Evidence.png)
+
+---
 
 ## 8. Isolation, Authority, and Side-Effect Control
 
@@ -404,10 +406,6 @@ In this form, a UIERU can contribute to today's task while preparing tomorrow's 
 Whether this architecture improves real systems remains an empirical question. The proposed contracts, lifecycle, and baselines make that question more precise and testable.
 
 ---
-
-## Figure Placement
-
-Insert `../figures/Fig-004-Sandbox-Threading-and-Counter-Evidence.png` after Section 7 or immediately before Section 9. The figure should distinguish exploit, explore, and challenge threads; show isolation and governance boundaries; and preserve separate outputs for evidence, relay, and proposed structural deltas.
 
 ## Research and Engineering Context
 
