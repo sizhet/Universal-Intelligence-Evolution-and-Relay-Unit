@@ -19,8 +19,6 @@ The proposed unit is represented as **U = (K, P, F, R, E)**: a governing contrac
 
 **Keywords:** UIERU; canonical unit; task contract; calling path; scoring forest; forward guidance; relay envelope; provenance; multi-trail; composition; structural evolution; conformance.
 
----
-
 ## 1. Start with a Task, Not a New Kind of Agent
 
 Consider a neighborhood lawn-care service. The customer specifies an area, a deadline, acceptable quality, a budget, and safety constraints. The provider chooses a route through preparation, mowing, cleanup, inspection, and completion. Weather may change the plan. The customer must be able to inspect the result. The next provider may benefit from a record of the equipment used, difficulties encountered, and remaining work.
@@ -51,6 +49,12 @@ Forward Guidance <----> Calling Path / Execution
 Nothing here requires a new model, an autonomous agent, or an elaborate runtime. The worker may be human; scoring may be a checklist; the relay may be a signed work record. The architecture becomes useful when these elements need to remain coherent across execution, handoff, and improvement.
 
 **Design principle:** UIERU is a *selective organizational container*, not a compulsory replacement for functions, workflows, agents, or human judgment.
+
+---
+
+![Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png](../figures/Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png)
+
+---
 
 ## 2. Canonical Definition
 
@@ -134,6 +138,12 @@ Long paths need not be transmitted as raw event logs. They may be summarized int
 ## 5. F — Scoring Forest: Guidance Before, During, and After
 
 The Scoring Forest is not merely an end-of-task grading function. It is the unit's **directional control and evaluation structure**.
+
+---
+
+![Fig-002-Calling-Path-and-Scoring-Forest-Duality.png](../figures/Fig-002-Calling-Path-and-Scoring-Forest-Duality.png)
+
+---
 
 ### 5.1 Three operational phases
 
@@ -371,8 +381,6 @@ This paper supplies the **canonical vocabulary and boundaries**. Later papers sp
 - **UIERU-010:** engineering boundaries and validation.
 
 Engineering contracts and lifecycle details are reserved for `specs/SPEC-001` through `SPEC-004`. These documents should refine, not silently contradict, the definitions introduced here.
-
-**Suggested figure:** `figures/Fig-002-Calling-Path-and-Scoring-Forest-Duality.png` accompanies Section 5 when available. The introductory motion diagram `figures/Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png` can accompany Sections 1–2. Figure files are not required to understand this paper.
 
 ## 16. Conclusion
 

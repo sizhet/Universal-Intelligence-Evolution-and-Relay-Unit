@@ -4,15 +4,12 @@
 **Version:** 1.0.0  
 **Authors:** Sizhe Tan & GPT-Obot  
 **Status:** Research architecture and testable engineering proposal  
-**Companion figure:** `figures/Fig-008-UIERU-Grand-Architecture-and-Structural-Evolution.png`
 
 ## Abstract
 
 A capable execution system can complete tasks without becoming better at completing the next task. The Universal Intelligence Evolution and Relay Unit (UIERU) addresses this gap by coupling a governed Calling Path with a forward-guiding Scoring Forest, an evidence-bearing relay interface, and a controlled structural-evolution process. This paper develops the evolution component: how execution residuals, counter-evidence, failed and alternative trails, and relay feedback can become proposed modifications to contracts, paths, scoring policies, and reusable intelligence structures. It distinguishes observations from explanations, hypotheses from validated improvements, and local gains from transferable advances. It proposes an auditable lifecycle—detect, diagnose, propose, sandbox, compare, authorize, deploy, monitor, and rollback—together with bounded recursive improvement, versioned provenance, and empirical tests. Structural evolution is treated as an engineering hypothesis to be evaluated against simpler alternatives, not as a guarantee of open-ended self-improvement.
 
 **Keywords:** UIERU; structural intelligence; residual learning; recursive improvement; Calling Path; Scoring Forest; multi-trail sandbox; counter-evidence; relay; provenance; evaluation governance.
-
----
 
 ## 1. Why Execution Alone Is Not Evolution
 
