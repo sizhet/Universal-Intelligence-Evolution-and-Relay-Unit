@@ -61,9 +61,9 @@ This can be implemented with people, ordinary software, agents, or combinations 
 
 The research model is:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 | Element | Name | Engineering responsibility |
 |---|---|---|
@@ -159,7 +159,7 @@ A **subject index** is a functional organization mechanism, not evidence of AI c
 
 ## 9. Figures
 
-The repository's planned visual sequence is:
+The repository's eight architectural figures are:
 
 1. [Fig-001 — UIERU in Motion](figures/Fig-001-UIERU-in-Motion-From-Task-to-Relay-and-Evolution.png)
 2. [Fig-002 — Calling Path and Scoring Forest Duality](figures/Fig-002-Calling-Path-and-Scoring-Forest-Duality.png)

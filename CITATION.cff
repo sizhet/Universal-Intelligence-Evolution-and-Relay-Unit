@@ -3,7 +3,7 @@ message: >-
   If you use this research repository, please cite the versioned release
   using the metadata provided here. Once a Zenodo DOI is assigned, cite
   the archived release DOI.
-type: software
+type: generic
 title: "Universal Intelligence Evolution and Relay Unit (UIERU): Composable Structural Intelligence, Forward Guidance, Relay, and Validated Evolution"
 authors:
   - family-names: Tan
@@ -13,6 +13,7 @@ authors:
 repository-code: "https://github.com/sizhet/Universal-Intelligence-Evolution-and-Relay-Unit"
 url: "https://github.com/sizhet/Universal-Intelligence-Evolution-and-Relay-Unit"
 version: 1.0.0
+date-released: 2026-10-26
 abstract: >-
   UIERU proposes a composable organizational unit for structural intelligence,
   integrating governed contracts, calling paths, forward-guiding scoring
