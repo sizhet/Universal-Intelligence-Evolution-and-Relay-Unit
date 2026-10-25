@@ -219,7 +219,7 @@ The eight figure paths in this repository are:
 7. `figures/Fig-007-Bidirectional-Collective-Learning-Ecosystem.png`
 8. `figures/Fig-008-UIERU-Grand-Architecture-and-Structural-Evolution.png`
 
-See [FIGURE-INDEX](FIGURE-INDEX.md) for captions and suggested placements once available. Image references resolve only after the corresponding individual PNG files are present under `figures/`.
+See [FIGURE-INDEX](FIGURE-INDEX.md)
 
 ## 9. What This Repository Does Not Claim
 
