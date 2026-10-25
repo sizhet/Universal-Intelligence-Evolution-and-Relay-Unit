@@ -262,6 +262,8 @@ Please distinguish **architecture proposals**, **illustrative examples**, and **
 **Version:** v1.0.0  
 **Repository:** https://github.com/sizhet/Universal-Intelligence-Evolution-and-Relay-Unit
 
+DOI: 10.5281/zenodo.23648971
+
 For machine-readable citation and release metadata, see [CITATION.cff](CITATION.cff), [.zenodo.json](.zenodo.json), and [CHANGELOG.md](CHANGELOG.md). Add the assigned Zenodo DOI after publication; **no DOI is asserted here before issuance**.
 
 Check the repository's actual LICENSE file and metadata for applicable terms. This README does not independently declare a license.
