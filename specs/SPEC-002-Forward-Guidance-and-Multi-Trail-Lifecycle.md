@@ -11,6 +11,16 @@
 
 This specification defines an implementable lifecycle for forward-guided execution and multi-trail exploration within a Universal Intelligence Evolution and Relay Unit (UIERU). It separates *proposal* from *authorization*, *sandbox experimentation* from *real-world action*, and *candidate structural improvement* from *approved evolution*. A forward-guiding Scoring Forest evaluates candidate Calling Paths before execution, monitors evidence and constraints during execution, and supports settlement and learning afterward. Multi-trail execution permits controlled Exploit, Explore, and Challenge branches whose outcomes are preserved as a relayable evidence portfolio. The specification provides normative requirements, lifecycle states, event and decision contracts, scheduling rules, safety invariants, example records, and testable conformance criteria. It is a proposed interoperability contract, not a claim that universal applicability or intelligence improvement has already been demonstrated.
 
+---
+
+![Fig-003-Forward-Guidance-and-Multi-Trail-Search.png](../figures/Fig-003-Forward-Guidance-and-Multi-Trail-Search.png)
+
+---
+
+![Fig-004-Sandbox-Threading-and-Counter-Evidence.png](../figures/Fig-004-Sandbox-Threading-and-Counter-Evidence.png)
+
+---
+
 ## 1. Scope and Normative Language
 
 The key words **MUST**, **MUST NOT**, **REQUIRED**, **SHOULD**, **SHOULD NOT**, and **MAY** express normative requirements for implementations claiming conformance to this specification.
@@ -452,6 +462,3 @@ Forward guidance turns a Calling Path from a fixed execution sequence into a con
 **Engineering First · Theory Supported · Research Open.**
 
 ---
-
-**Suggested repository path:** `specs/SPEC-002-Forward-Guidance-and-Multi-Trail-Lifecycle.md`  
-**Suggested companion figure:** `figures/Fig-003-Forward-Guidance-and-Multi-Trail-Search.png` and `figures/Fig-004-Sandbox-Threading-and-Counter-Evidence.png`
