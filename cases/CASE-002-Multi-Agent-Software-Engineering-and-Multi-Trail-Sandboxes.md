@@ -156,6 +156,12 @@ PROPOSED -> CONTRACTED -> SANDBOXED -> RUNNING
 
 “Failed” is an execution status, not permission to discard evidence. A failed experiment can expose a missing precondition or evaluator defect.
 
+---
+
+![Fig-004-Sandbox-Threading-and-Counter-Evidence.png](../figures/Fig-004-Sandbox-Threading-and-Counter-Evidence.png)
+
+---
+
 ## 7. Worked Trace: An Illustrative Concurrency Failure
 
 The following trace is hypothetical, designed to show the mechanism; it does not report a measured benchmark.
@@ -425,8 +431,6 @@ This case operationalizes concepts introduced in the core series:
 - `UIERU-010`: Engineering boundaries and validation.
 
 These links are optional deeper reading; this case is intended to be understandable independently.
-
-**Planned figure:** `figures/Fig-004-Sandbox-Threading-and-Counter-Evidence.png` may be cited near Sections 6–8. The figure is not required to understand the case.
 
 ## 19. Research Questions and Open Engineering Issues
 
