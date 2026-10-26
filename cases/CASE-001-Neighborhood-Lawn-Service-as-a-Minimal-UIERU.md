@@ -39,9 +39,9 @@ The operator retains authority over safety decisions and whether to perform the 
 
 We use the canonical notation:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 - **K — Contract:** who requests the work, what is authorized, goals, constraints, and acceptance criteria.
 - **P — Calling Path:** the sequence of human and software actions needed to deliver the service.
@@ -147,13 +147,13 @@ The critical distinction is between **constraints** and **trade-offs**. A high e
 
 A conceptual decision rule is:
 
-\[
+$$
 \mathcal{A}_{\mathrm{feasible}}(s) = \{a \in \mathcal{A}(s) : C_i(a,s) = \mathrm{true}\ \forall i\}
-\]
+$$
 
-\[
-a^* \in \operatorname*{argmax}_{a \in \mathcal{A}_{\mathrm{feasible}}(s)} V(a \mid s, K, F)
-\]
+$$
+a^* \in operatorname*{argmax}_{a \in \mathcal{A}_{\mathrm{feasible}}(s)} V(a \mid s, K, F)
+$$
 
 Here, `s` is the observed situation; `C_i` are mandatory constraints; and `V` is an illustrative, context-dependent valuation function. No universal weighting is presumed.
 

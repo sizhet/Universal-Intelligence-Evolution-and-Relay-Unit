@@ -105,9 +105,9 @@ If the gate is locked, the team might consider obtaining authorized access, resc
 
 The proposed research model is:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 - **K — Contract:** the goal, relevant subject and task object, permitted actions, constraints, accountability, and success conditions.
 - **P — Calling Path:** a structured sequence or graph of executable actions, dependencies, tools, and agents.

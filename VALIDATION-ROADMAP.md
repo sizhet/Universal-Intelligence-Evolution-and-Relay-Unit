@@ -11,9 +11,9 @@
 
 The Universal Intelligence Evolution and Relay Unit (UIERU) is a proposed organizational architecture for existing human and machine capabilities. Its canonical decomposition is
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+$$
 
 where **K** specifies contract and authority, **P** the Calling Path, **F** the forward-guiding Scoring Forest, **R** evidence-preserving relay, and **E** governed structural evolution. UIERU does not require replacing LLMs, agents, services, or human decision-makers; nor is it appropriate for every task.
 

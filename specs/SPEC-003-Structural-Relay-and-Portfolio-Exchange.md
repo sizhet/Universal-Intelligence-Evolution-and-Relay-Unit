@@ -39,9 +39,9 @@ It does **not** define a transport protocol, cryptographic algorithm, global ide
 
 A UIERU is represented as:
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+##
 
 where **K** is its contract and authority boundary; **P** is its Calling Path; **F** is its forward-guiding Scoring Forest; **R** is its relay capability; and **E** is its governed structural evolution capability.
 

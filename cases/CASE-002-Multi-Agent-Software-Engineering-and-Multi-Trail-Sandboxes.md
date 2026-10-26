@@ -32,9 +32,9 @@ The proposed UIERU organization answers these questions by making **execution, g
 
 Represent a UIERU as:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 where:
 
@@ -108,17 +108,17 @@ A Scoring Forest is a set of perspective-aware evaluation and control structures
 
 An illustrative utility model for a trail `t` is:
 
-\[
+$$
 V(t) = B_{quality}(t) + B_{information}(t) - C_{compute}(t) - C_{delay}(t) - R_{risk}(t)
-\]
+$$
 
 This expression is **not** a universal scalar objective. Hard safety and authority constraints are evaluated first; some perspectives are non-compensatory. A cheap but unsafe trail is ineligible even if its apparent score is high. Confidence intervals, evidence provenance, and uncertainty must accompany numerical estimates.
 
 A forward-guidance decision can be written as:
 
-\[
-a^* = \operatorname*{argmax}_{a \in A_{permitted}}\; \mathbb{E}[\Delta V \mid s, a, e]
-\]
+$$
+a^* = operatorname*{argmax}_{a \in A_{permitted}}\; \mathbb{E}[\Delta V \mid s, a, e]
+$$
 
 where `s` is current state, `e` is available evidence, and `A_permitted` is the set of contract-compliant actions. Estimates must be calibrated experimentally; the formula defines a decision intent, not an already validated optimizer.
 

@@ -12,9 +12,9 @@
 
 UIERU organizes existing intelligence capabilities into a governed, composable unit:
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+$$
 
 where **K** is the contract and authority boundary, **P** the Calling Path, **F** the forward-guiding Scoring Forest, **R** evidence-preserving relay, and **E** governed structural evolution. A UIERU may include human operators, LLMs, agents, conventional software, external services, and sandboxed exploration. It is not a requirement that every task use a UIERU, nor that a UIERU be an autonomous conscious subject.
 

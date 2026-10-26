@@ -12,9 +12,9 @@
 
 The proposed Universal Intelligence Evolution and Relay Unit (UIERU) integrates five interacting functions:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 - **K — Contract:** task, subject, authority, goals, constraints, acceptance conditions.
 - **P — Calling Path:** executable and observable action/dependency structure.

@@ -9,9 +9,9 @@
 
 The Universal Intelligence Evolution and Relay Unit (UIERU) proposes a composable organizational unit for coordinating existing human and machine capabilities through governed execution paths, forward guidance, structural relay, and validated evolution. Its compact reference model is:
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+$$
 
 where **K** is the contract, **P** the calling path, **F** the forward-guiding scoring forest, **R** the relay mechanism, and **E** the structural evolution mechanism. These components describe a research architecture, not a requirement that every task or every implementation use all mechanisms at full complexity.
 

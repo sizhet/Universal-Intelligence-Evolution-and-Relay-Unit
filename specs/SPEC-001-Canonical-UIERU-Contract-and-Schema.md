@@ -13,9 +13,9 @@
 
 This specification defines a minimal, portable contract for a **Universal Intelligence Evolution and Relay Unit (UIERU)**. A UIERU organizes existing human, software, agent, model, and service capabilities into a governed unit of execution, forward guidance, evidence-bearing relay, and optional structural evolution. Its canonical conceptual model is:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 where **K** is the governing contract, **P** the calling path, **F** the forward-guiding scoring forest, **R** the relay interface, and **E** the evolution policy. The contract makes ownership, authorization, scope, constraints, interfaces, evidence, and acceptance criteria explicit. The schema is a proposed interoperability baseline, **not** a ratified industry standard or a claim of universal applicability.
 

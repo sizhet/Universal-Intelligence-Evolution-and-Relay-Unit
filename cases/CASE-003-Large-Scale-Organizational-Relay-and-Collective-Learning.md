@@ -51,9 +51,9 @@ These units may be operated by people, software, agents, or mixed teams. **A UIE
 
 For each unit:
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+$$
 
 - **K — Contract:** purpose, subject and object, goals, constraints, authority, budgets, interfaces, acceptance criteria, and escalation.
 - **P — Calling Path:** executable or human-performed steps, dependencies, decision points, and observed state transitions.
@@ -134,9 +134,9 @@ The **Challenge** trail matters even if the Exploit trail succeeds. Recovery aft
 
 A budget-aware scheduler can prioritize trails using a conceptual decision function:
 
-\[
-\operatorname{Priority}(t)=g(\text{expected benefit},\text{information gain},\text{risk},\text{cost},\text{authority})
-\]
+$$
+operatorname{Priority}(t)=g(\text{expected benefit},\text{information gain},\text{risk},\text{cost},\text{authority})
+$$
 
 The function is intentionally unspecified: different organizations must calibrate and validate it. **No score overrides a hard authorization constraint.**
 
