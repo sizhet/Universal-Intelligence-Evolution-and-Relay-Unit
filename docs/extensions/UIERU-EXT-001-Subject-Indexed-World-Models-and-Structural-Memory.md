@@ -69,23 +69,23 @@ No layer is assumed to be globally visible. Shared does not mean unrestricted.
 
 Let `s` be a subject, `t` a time, `e` an event, and `c` an authorized task context. Define:
 
-\[
-W_{s,t,c}=\operatorname{Update}(W_{s,t-1,c},\operatorname{Observe}_{s,c}(e),H_{s,t},B_{s,t},G_{s,t},V_{s,t})
-\]
+$$
+W_{s,t,c}= operatorname{Update}(W_{s,t-1,c},operatorname{Observe}_{s,c}(e),H_{s,t},B_{s,t},G_{s,t},V_{s,t})
+$$
 
 where `H` is accessible history, `B` capability/embodiment context, `G` goals, and `V` evaluative perspective. This is a **design notation**, not a claim that every world model has these explicit fields or that they can be measured without error.
 
 A subject-indexed episode can be represented as:
 
-\[
+$$
 \epsilon=(event\_ref,subject\_ref,observation,context,action,consequence,time,provenance,access)
-\]
+$$
 
 A reusable structural precedent is not merely an episode:
 
-\[
+$$
 \pi=(pattern,conditions,evidence,counterevidence,validation,version,authority)
-\]
+$$
 
 The distinction is essential: **experience is not automatically a generalizable principle**.
 
@@ -167,9 +167,9 @@ Conventional retrieval often ranks semantic similarity. Subject-aware recall may
 
 An illustrative ranking objective is:
 
-\[
+$$
 Score(r\mid s,q,c)=w_1 Rel(r,q)+w_2 Context(r,s,c)+w_3 Causal(r,q)+w_4 Evidence(r)-w_5 Risk(r)
-\]
+$$
 
 This ranking applies **after mandatory access-control filtering**. No score may override a denied permission. Weights should be calibrated and evaluated; the expression is not a proven universal retrieval formula.
 

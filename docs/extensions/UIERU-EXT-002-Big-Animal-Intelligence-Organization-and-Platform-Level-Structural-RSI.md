@@ -45,9 +45,9 @@ A UIERU is a selective coordination and learning structure. Straightforward stat
 
 The base architecture remains:
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+$$
 
 where:
 
@@ -115,9 +115,9 @@ Each evaluator should declare:
 
 For candidate path \(p\), an illustrative representation is:
 
-\[
+$$
 S(p) = \{s_{quality}(p), s_{cost}(p), s_{risk}(p), s_{latency}(p), s_{learning}(p)\}
-\]
+$$
 
 Selection is a **constrained multi-objective decision**, not necessarily a weighted sum. Non-negotiable authorization and safety conditions filter candidates before optimization. Remaining alternatives may be compared by Pareto dominance, lexicographic priorities, or an explicitly approved aggregation rule. Conflicts and uncertainty should survive folding into the relay record.
 
@@ -204,11 +204,11 @@ The central hypothesis is that a platform can improve **the structures that gene
 
 A candidate loop is:
 
-\[
+$$
 \text{Task Residuals} \rightarrow \text{Candidate Structural Delta}
 \rightarrow \text{Adversarial Validation} \rightarrow \text{Approved Rollout}
 \rightarrow \text{Measured Outcomes}
-\]
+$$
 
 A structural delta might change:
 
@@ -309,10 +309,10 @@ UIERU adds coordination overhead: contracts, provenance, evaluator calls, sandbo
 
 For a workload family \(w\), an illustrative decision criterion is:
 
-\[
+$$
 \Delta V_w = V_{quality} + V_{reuse} + V_{risk\ reduction}
 - C_{coordination} - C_{compute} - C_{governance}
-\]
+$$
 
 The terms must be measured in compatible units or evaluated as a constrained multi-objective decision; this equation is a bookkeeping abstraction, not a validated economic law. Low-risk, low-reuse tasks may rationally bypass UIERU.
 

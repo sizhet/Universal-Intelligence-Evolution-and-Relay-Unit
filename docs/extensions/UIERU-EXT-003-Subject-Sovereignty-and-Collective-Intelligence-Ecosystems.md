@@ -27,9 +27,9 @@ We call the proposed answer **Subject Sovereignty with Governed Collective Struc
 
 A Universal Intelligence Evolution and Relay Unit is a selectively adopted organizational intelligence structure:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 - **K — Contract:** subject, task, purpose, authority, constraints, resources, evidence obligations, and acceptance criteria.
 - **P — Calling Path:** ordered or conditional actions performed by people, models, agents, tools, and services.
