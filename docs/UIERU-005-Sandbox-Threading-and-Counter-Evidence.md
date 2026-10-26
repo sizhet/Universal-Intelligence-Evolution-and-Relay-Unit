@@ -30,9 +30,9 @@ The present paper asks a narrower question: **How can a UIERU explore multiple t
 
 For self-contained reading, define a UIERU as
 
-\[
+$$
 U=(K,P,F,R,E),
-\]
+$$
 
 where:
 
@@ -90,20 +90,20 @@ Thus the scoring structure evaluates both **candidate paths** and the **search p
 
 For a proposed thread \(i\), consider a research heuristic
 
-\[
+$$
 J_i = \mathbb{E}[V_i] + \lambda I_i + \eta D_i - \mu C_i - \nu R_i,
-\]
+$$
 
 where \(V_i\) is expected task contribution, \(I_i\) expected information gain, \(D_i\) expected diversity or counter-evidence value, \(C_i\) resource cost, and \(R_i\) estimated risk. The weights depend on the contract and perspective.
 
 This heuristic is **not** a license to trade away hard safety requirements. A thread is eligible only if it satisfies independent constraints:
 
-\[
-\operatorname{Eligible}(i) =
-\operatorname{Authorized}(i) \land
-\operatorname{WithinBudget}(i) \land
-\operatorname{WithinRiskLimits}(i).
-\]
+$$
+operatorname{Eligible}(i) =
+operatorname{Authorized}(i) \land
+operatorname{WithinBudget}(i) \land
+operatorname{WithinRiskLimits}(i).
+$$
 
 Where probability estimates are unreliable, the scheduler should use intervals, qualitative uncertainty, or conservative rules rather than fabricated precision. The system may also reserve resources for challenge trails even when their immediate expected task score is low.
 
@@ -205,9 +205,9 @@ A thread may be fast but fragile; another may be robust but expensive; a third m
 
 The Scoring Forest can preserve a vector of attributes:
 
-\[
+$$
 \mathbf{s}_i = (q_i,c_i,r_i,u_i,e_i),
-\]
+$$
 
 representing task quality, cost, risk, uncertainty, and evidence strength, with explicit direction and normalization rules. Hard constraints should be applied first. Perspective-specific evaluation can then compare admissible candidates, preserving Pareto alternatives and unresolved conflicts.
 
@@ -226,9 +226,9 @@ A useful experiment need not change model weights. It may produce a proposed cha
 
 Represent a candidate change as
 
-\[
+$$
 \Delta U = (\Delta K,\Delta P,\Delta F,\Delta R,\Delta E).
-\]
+$$
 
 Not every component must change. A candidate delta is **not** an accepted improvement until its compatibility, evidence, and regression behavior have been checked.
 
@@ -285,9 +285,9 @@ This is a conceptual schema; normative field types and conformance rules belong 
 
 A UIERU can contribute tested paths, challenge records, structural deltas, and negative results to a shared registry. It can also discover and import artifacts from other units. This creates two directional flows:
 
-\[
+$$
 U_i \rightarrow \text{Collective Registry} \rightarrow U_j.
-\]
+$$
 
 The arrow does not imply automatic trust. Import requires identity and provenance checks, contract mapping, local scoring, policy review, and where necessary sandbox revalidation. Negative results may be especially useful when they prevent repeated failures or reveal hidden constraints.
 

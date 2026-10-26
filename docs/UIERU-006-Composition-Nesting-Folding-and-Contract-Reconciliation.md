@@ -32,9 +32,9 @@ UIERU composition addresses these questions as a candidate organizational layer 
 
 We use the canonical representation introduced in UIERU-002:
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+$$
 
 where:
 
@@ -90,9 +90,9 @@ Hybrid structures are normal. Composition should therefore be modeled as a graph
 
 Each unit has an internal Calling Path or Calling Graph fragment \(P_i\). Composition creates inter-unit edges that connect exit conditions of one fragment to entry conditions of another. An edge should specify more than “next step”:
 
-\[
+$$
 e_{ij}=(\text{trigger},\text{input mapping},\text{preconditions},\text{authority},\text{failure policy})
-\]
+$$
 
 The composed path is not necessarily a single linear trace. It may contain forks, joins, retries, optional tasks, and multi-trail sandboxes. Correctness requires that an edge's preconditions be established by validated upstream evidence rather than inferred from a nominal success flag.
 
@@ -112,9 +112,9 @@ Naive composition assumes that if units can exchange data, they can be safely co
 
 Let \(K_i\) denote the contract of unit \(U_i\). A parent or coordinating unit proposes an effective composite contract:
 
-\[
-K_C=\operatorname{Reconcile}(K_1,\ldots,K_n;K_{\mathrm{parent}},\Pi)
-\]
+$$
+K_C=operatorname{Reconcile}(K_1,\ldots,K_n;K_{\mathrm{parent}},\Pi)
+$$
 
 where \(\Pi\) represents applicable governance policies and reconciliation rules. The operator may return a valid contract, a conditional contract requiring approval, or a conflict report. **It must not be assumed to always succeed.**
 
@@ -137,9 +137,9 @@ A practical reconciliation process distinguishes **hard constraints**, which can
 
 A feasible composite plan \(x\) must satisfy:
 
-\[
+$$
 x\in\bigcap_i \mathcal{C}_i \cap \mathcal{C}_{\mathrm{parent}}
-\]
+$$
 
 where \(\mathcal{C}_i\) is the applicable constraint set of each participating unit. Empty intersection means the proposed composition is infeasible under current contracts. The correct output is a conflict or redesign request, not an invented compromise.
 
@@ -161,17 +161,17 @@ Each unit may use a Scoring Forest \(F_i\) to guide its own decisions. Forests c
 
 A tempting but generally invalid rule is:
 
-\[
+$$
 S_C=\sum_i S_i
-\]
+$$
 
 Local scores may differ in scale, reference population, uncertainty, incentives, and measurement coverage. They may double-count shared benefits or hide catastrophic failures behind high averages. Moreover, a parent may value cross-unit interactions that no child measures.
 
 We therefore propose a **perspective-aware folding operator**:
 
-\[
-F_C=\operatorname{Fold}(F_1,\ldots,F_n;K_C,\Gamma,\Omega)
-\]
+$$
+F_C=operatorname{Fold}(F_1,\ldots,F_n;K_C,\Gamma,\Omega)
+$$
 
 where \(\Gamma\) contains cross-unit dependencies and \(\Omega\) specifies normalization, uncertainty, evidence provenance, and aggregation policy. This is an architectural signature, not a uniquely defined mathematical solution.
 
@@ -198,10 +198,10 @@ Scoring Forests must guide the *future*, not merely summarize the past. In a com
 
 A useful decision formulation is:
 
-\[
+$$
 \pi_C^*=\arg\max_{\pi\in\mathcal{P}_{\mathrm{feasible}}}
-\operatorname{Value}_{F_C}(\pi\mid E_t,K_C,B_t)
-\]
+operatorname{Value}_{F_C}(\pi\mid E_t,K_C,B_t)
+$$
 
 Here \(E_t\) is current evidence and \(B_t\) the remaining resource budget. The expression identifies the optimization target but does not imply that an exact optimizer is always available. Heuristics, human review, constraint solvers, and learned policies are all possible implementations.
 
@@ -295,9 +295,9 @@ A UIERU may evolve its local Calling Path, Scoring Forest, contract templates, o
 
 A candidate structural delta \(\Delta_i\) should carry:
 
-\[
+$$
 \Delta_i=(\text{target},\text{change},\text{evidence},\text{tests},\text{compatibility},\text{rollback})
-\]
+$$
 
 Suggested lifecycle:
 

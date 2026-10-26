@@ -36,9 +36,9 @@ The proposal is self-contained. Familiarity with other Structural Intelligence r
 
 Let a UIERU be represented as
 
-\[
+$$
 U = (K, P, F, R, E),
-\]
+$$
 
 where:
 
@@ -133,10 +133,10 @@ A retrospective evaluator scores an outcome after the path has run. A **forward-
 
 At state \(s_t\), with candidate actions \(A_t\), contract \(K\), and available evidence \(D_t\), a policy may select:
 
-\[
-a_t \in \operatorname*{arg\,max}_{a \in A_t \cap \operatorname{Allowed}(K,s_t)}
+$$
+a_t \in operatorname*{arg\,max}_{a \in A_t \cap operatorname{Allowed}(K,s_t)}
 G_F(a \mid s_t,D_t,K),
-\]
+$$
 
 where \(G_F\) represents a contract-constrained aggregation of perspectives such as expected task benefit, uncertainty reduction, execution cost, reversibility, and risk. This expression is **illustrative**, not a universal objective function. Some constraints must be enforced as hard predicates rather than traded against a score.
 
@@ -192,12 +192,12 @@ UIERUs can be sequential, parallel, hierarchical, or federated. A parent unit ma
 
 For a delegated operation \(x\), a conservative admission rule is:
 
-\[
-\operatorname{Permit}(x) =
-\operatorname{Permit}_{parent}(x) \land
-\operatorname{Permit}_{child}(x) \land
-\operatorname{Permit}_{environment}(x).
-\]
+$$
+operatorname{Permit}(x) =
+operatorname{Permit}_{parent}(x) \land
+operatorname{Permit}_{child}(x) \land
+operatorname{Permit}_{environment}(x).
+$$
 
 This is a simplified rule; real contracts may contain time, jurisdiction, data-use, purpose, and resource constraints.
 

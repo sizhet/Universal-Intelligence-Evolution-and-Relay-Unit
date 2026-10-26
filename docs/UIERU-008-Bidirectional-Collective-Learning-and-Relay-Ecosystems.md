@@ -46,9 +46,9 @@ The result is a **relay ecosystem**, not a mandatory centralized brain.
 
 We retain the canonical abstraction introduced in UIERU-002:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 where:
 
@@ -64,9 +64,9 @@ A unit can be a human-led workflow, a multi-agent process, a software engineerin
 
 An ecosystem is a graph of units and relay relationships:
 
-\[
+$$
 \mathcal{G} = (\mathcal{U}, \mathcal{L})
-\]
+$$
 
 Here, \(\mathcal{U}\) is the set of participating units and \(\mathcal{L}\) contains authorized relay channels. These channels may be one-way, reciprocal, time-limited, or mediated by registries. A connected graph does not imply universal trust or uniform scoring.
 
@@ -197,10 +197,10 @@ This is an **illustrative schema**, not a finalized interoperable standard. The 
 
 A received portfolio should pass through a receiver-controlled localization pipeline:
 
-\[
+$$
 \text{Receive} \rightarrow \text{Verify} \rightarrow \text{Map} \rightarrow
 \text{Sandbox} \rightarrow \text{Evaluate} \rightarrow \text{Authorize}
-\]
+$$
 
 **Verify:** confirm origin, integrity, declared scope, and available evidence.  
 **Map:** translate tools, roles, types, units, interfaces, and local environmental assumptions.  
@@ -220,11 +220,11 @@ This is an architectural requirement, not an emergent property that can be assum
 
 Let \(H_i\) denote unit \(i\)'s local store of accepted structures, hypotheses, and evidence. A received portfolio \(r\) is not automatically inserted into \(H_i\). Instead:
 
-\[
-H_i^{t+1} = \operatorname{Update}(H_i^t,\operatorname{Validate}_i(r),e_i)
-\]
+$$
+H_i^{t+1} = operatorname{Update}(H_i^t,operatorname{Validate}_i(r),e_i)
+$$
 
-where \(e_i\) is local evidence and \(\operatorname{Validate}_i\) is receiver-specific. `Update` may preserve a rejected candidate as counter-evidence rather than discarding it.
+where \(e_i\) is local evidence and \(operatorname{Validate}_i\) is receiver-specific. `Update` may preserve a rejected candidate as counter-evidence rather than discarding it.
 
 A bidirectional learning cycle consists of:
 
@@ -254,11 +254,11 @@ At a unit level, forward guidance selects Calling Path candidates. At an ecosyst
 
 A conceptual relay-selection objective is:
 
-\[
-\operatorname{Priority}(r,i) =
-\operatorname{Benefit}_i(r) + \lambda\operatorname{InformationGain}_i(r)
-- \mu\operatorname{Cost}_i(r) - \rho\operatorname{Risk}_i(r)
-\]
+$$
+operatorname{Priority}(r,i) =
+operatorname{Benefit}_i(r) + \lambda operatorname{InformationGain}_i(r)
+- \mu operatorname{Cost}_i(r) - \rho operatorname{Risk}_i(r)
+$$
 
 subject to hard authorization, privacy, and safety constraints. This is an illustrative decision model, not a universally valid metric. Some dimensions may be incomparable; **perspective-aware folding** should preserve veto conditions and material uncertainty instead of collapsing everything into one scalar.
 

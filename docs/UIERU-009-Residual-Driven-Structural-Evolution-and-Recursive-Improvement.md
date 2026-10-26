@@ -29,9 +29,9 @@ Suppose three jobs repeatedly overrun their estimates because a particular slope
 
 We retain the canonical UIERU model introduced in UIERU-002:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 where:
 
@@ -64,9 +64,9 @@ A **residual** is an observed discrepancy between an expected or desired propert
 
 For metric \(j\), a simple diagnostic residual is:
 
-\[
+$$
 r_j = y_j - \hat{y}_j
-\]
+$$
 
 where \(y_j\) is the observed result and \(\hat{y}_j\) is the forecast or reference. This expression is only meaningful when the metric definition, unit, observation window, and uncertainty are preserved.
 
@@ -90,9 +90,9 @@ A scoring anomaly without provenance should be flagged for investigation rather 
 
 A **Structural Delta** is a proposed, versionable modification to a UIERU component or its composition. It is not the residual itself.
 
-\[
+$$
 \Delta U = (\Delta K, \Delta P, \Delta F, \Delta R, \Delta E)
-\]
+$$
 
 Most candidates modify only a subset of these elements. For example, a slope-related residual might yield a new terrain-inspection step (\(\Delta P\)) and a conditional equipment-risk criterion (\(\Delta F\)), while leaving the contract unchanged.
 
@@ -128,9 +128,9 @@ Forward guidance applies not only to task execution but also to the choice of im
 
 A conceptual selection objective is:
 
-\[
-\operatorname*{select}_{d \in D} \; \mathbb{E}[V(d) \mid H] - C_{test}(d) - \lambda Risk(d)
-\]
+$$
+operatorname*{select}_{d \in D} \; \mathbb{E}[V(d) \mid H] - C_{test}(d) - \lambda Risk(d)
+$$
 
 subject to authorization, safety, resource, and coverage constraints. Here \(H\) denotes current evidence; the formula is a design abstraction, not a universally valid estimator. In practice, uncertainty intervals, veto rules, and non-comparable stakeholder perspectives must be retained rather than forced into a single score.
 

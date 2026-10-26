@@ -69,9 +69,9 @@ UIERU = Execution Path + Forward Guidance + Relay + Evolution
 
 A compact architectural representation is:
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+$$
 
 where:
 
@@ -142,10 +142,10 @@ A useful scoring architecture has at least three operating horizons.
 
 For a feasible candidate set \(\mathcal{P}_{K}\) under contract \(K\), a conceptual decision rule is:
 
-\[
-P^* \in \operatorname*{arg\,max}_{P\in\mathcal{P}_{K}}
+$$
+P^* \in operatorname*{arg\,max}_{P\in\mathcal{P}_{K}}
 V_F(P\mid K,X,E_{\mathrm{obs}})
-\]
+$$
 
 Here \(X\) denotes relevant context, \(E_{\mathrm{obs}}\) available evidence, and \(V_F\) a context- and perspective-dependent evaluation produced by the Scoring Forest. This notation does **not** imply that the system can enumerate all possible paths, calculate exact values, or solve global optimization. In practice, candidate generation and scoring can be heuristic, approximate, hierarchical, learned, or human-assisted.
 
@@ -187,10 +187,10 @@ These labels denote **roles**, not mandatory fixed threads:
 
 The Scoring Forest can allocate exploration budgets, pause or terminate trails, and decide when further information is worth its cost. A conceptual trail-priority model is:
 
-\[
+$$
 J(T_i)=\mathbb{E}[V(T_i)]
 +\lambda I(T_i)-\mu C(T_i)-\nu R(T_i)
-\]
+$$
 
 where \(I\) represents expected information or structural-learning value, \(C\) exploration cost, and \(R\) modeled risk. The coefficients are context-dependent; this expression is a **research heuristic**, not a validated universal formula. Feasibility and hard safety constraints remain separate.
 
@@ -231,9 +231,9 @@ UIERUs may be nested and composed to form larger functions. A software-developme
 
 Conceptually:
 
-\[
-U_{\mathrm{macro}}=\operatorname{Compose}(U_1,\ldots,U_n;K_{\mathrm{macro}})
-\]
+$$
+U_{\mathrm{macro}}=operatorname{Compose}(U_1,\ldots,U_n;K_{\mathrm{macro}})
+$$
 
 Composition is **not automatically valid**. It requires checking:
 

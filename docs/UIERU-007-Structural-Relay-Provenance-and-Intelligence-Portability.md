@@ -33,9 +33,9 @@ A structural relay aims to preserve the minimum sufficient information for a rec
 
 A UIERU is modeled as:
 
-\[
+$$
 U = (K, P, F, R, E)
-\]
+$$
 
 where:
 
@@ -66,13 +66,13 @@ A recipient may import an informational record while refusing the other three la
 
 We can describe conditional portability as:
 
-\[
-\operatorname{Portable}(a, B) =
-\operatorname{Readable}(a,B) \land
-\operatorname{Compatible}(a,B) \land
-\operatorname{Authorized}(a,B) \land
-\operatorname{Verifiable}(a,B)
-\]
+$$
+operatorname{Portable}(a, B) =
+operatorname{Readable}(a,B) \land
+operatorname{Compatible}(a,B) \land
+operatorname{Authorized}(a,B) \land
+operatorname{Verifiable}(a,B)
+$$
 
 Here \(a\) is a proposed artifact and \(B\) a receiving context. This conjunction is a conceptual acceptance criterion, not a claim that each term has a universal numeric metric. Some artifacts can be retained as *reference-only* even when execution portability fails.
 
@@ -175,9 +175,9 @@ Provenance is more than a source citation. For a relayed decision, the recipient
 
 A minimal provenance event can be represented as:
 
-\[
+$$
 p_i = (actor, operation, inputs, outputs, time, context, evidence)
-\]
+$$
 
 A chain of these events forms a provenance graph rather than merely a flat log. Graph edges may represent *derived-from*, *used-by*, *challenged-by*, and *superseded-by* relationships.
 
@@ -214,9 +214,9 @@ Suppose a software-engineering UIERU receives a tested deployment workflow from 
 
 Localization is the controlled transformation:
 
-\[
+$$
 L_B(a, K_B, Env_B) \rightarrow (a_B, \Delta_B, Q_B)
-\]
+$$
 
 where \(a\) is the incoming artifact, \(K_B\) the receiving contract, \(Env_B\) the local environment, \(a_B\) the adapted candidate, \(\Delta_B\) the recorded changes, and \(Q_B\) the outstanding validation questions.
 
@@ -280,10 +280,10 @@ After receipt, the receiving forest may use different criteria. A sender's effic
 
 This yields a **two-perspective relay evaluation**:
 
-\[
+$$
 F_A(transfer\_value, transfer\_risk) \quad \text{and} \quad
 F_B(local\_fit, local\_risk)
-\]
+$$
 
 The two perspectives need not collapse into one scalar. A useful protocol exposes their differences and resolves them through contracts, negotiation, or rejection.
 

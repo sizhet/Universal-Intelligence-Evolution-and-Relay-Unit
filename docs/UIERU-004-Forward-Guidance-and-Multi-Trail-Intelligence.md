@@ -39,9 +39,9 @@ The thesis is not that multiple trails always outperform one trail. It is that *
 
 For engineering purposes, represent a UIERU as:
 
-\[
+$$
 U=(K,P,F,R,E)
-\]
+$$
 
 where:
 
@@ -82,10 +82,10 @@ Afterward, the system reconciles predictions with observations, identifies viola
 
 Let \(\mathcal{P}_t\) denote the available candidate trails at time \(t\), \(x_t\) the observed task state, and \(K\) the governing contract. A conceptual controller performs:
 
-\[
+$$
 (\mathcal{P}_{t+1}, a_t, b_t)
 =\pi_F(\mathcal{P}_t,x_t,K,H_t)
-\]
+$$
 
 Here \(a_t\) is the next permitted action or branch decision, \(b_t\) is the exploration budget allocation, and \(H_t\) is accumulated evidence. The policy \(\pi_F\) is not necessarily a learned neural policy: it may be a rule system, optimizer, human-led process, LLM-assisted planner, or hybrid.
 
@@ -103,24 +103,24 @@ Real tasks combine multiple, potentially incompatible perspectives: task quality
 
 For candidate trail \(p\), define a descriptive score vector:
 
-\[
+$$
 \mathbf{s}(p)=[q(p),c(p),r(p),i(p),u(p),g(p)]
-\]
+$$
 
 where \(q\) is task quality, \(c\) cost, \(r\) risk, \(i\) expected information gain, \(u\) uncertainty, and \(g\) governance or contractual fit. These quantities may be estimates with intervals, not precise facts.
 
 A provisional utility for **feasible** trails might be:
 
-\[
+$$
 J(p)=\mathbb{E}[q(p)]+\lambda i(p)-\mu c(p)-\nu r(p)
-\]
+$$
 
 subject to:
 
-\[
+$$
 p\in\mathcal{P}_{\mathrm{authorized}},\qquad
-\operatorname{HardConstraints}(p,K)=\mathrm{true}.
-\]
+operatorname{HardConstraints}(p,K)=\mathrm{true}.
+$$
 
 The utility is a decision aid, **not** permission to trade away hard safety, legal, privacy, or authorization constraints. When perspectives are incommensurable, the system should retain a Pareto set, use lexicographic priorities, or escalate to an authorized decision-maker rather than invent a misleading scalar total.
 
@@ -213,12 +213,12 @@ This procedure separates **candidate generation**, **scoring**, **execution auth
 
 Branching has opportunity cost. A practical decision criterion compares the expected incremental value of exploration with its total cost:
 
-\[
+$$
 \Delta V_{\mathrm{branch}}=
 \mathbb{E}[V\mid\mathrm{branch}]
 -\mathbb{E}[V\mid\mathrm{single}]
 -C_{\mathrm{branch}}.
-\]
+$$
 
 The controller should consider branching when the estimated value is positive **and** all hard constraints permit it. Relevant factors include:
 

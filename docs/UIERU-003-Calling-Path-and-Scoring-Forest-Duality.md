@@ -43,9 +43,9 @@ The same organizational pattern may apply to software agents, manufacturing, log
 
 Let a calling graph be a directed, attributed structure:
 
-\[
+$$
 G_C=(N_C,E_C,\tau,\sigma),
-\]
+$$
 
 where nodes represent actions, services, observations, decisions, or nested units; edges represent admissible calls, dependencies, transitions, or handoffs; \(\tau\) assigns types; and \(\sigma\) holds execution-relevant state or metadata.
 
@@ -57,9 +57,9 @@ Calling structures can preserve order, dependencies, inputs and outputs, provena
 
 Let a scoring forest be a collection of perspective-aware evaluation structures:
 
-\[
+$$
 F=\{T_1,T_2,\ldots,T_m\},
-\]
+$$
 
 where each \(T_j\) may represent a task objective, stakeholder perspective, safety criterion, resource constraint, or specialized valuation model. The forest may combine numeric scores, ordinal judgments, logical gates, hard constraints, and human decisions. It need not be differentiable or reducible to one scalar.
 
@@ -77,9 +77,9 @@ A calling path without forward valuation can become an efficiently recorded mist
 
 Following UIERU-002, define the canonical unit:
 
-\[
+$$
 U=(K,P,F,R,E),
-\]
+$$
 
 where \(K\) is the governing contract, \(P\) the calling path, \(F\) the scoring forest, \(R\) the relay interface, and \(E\) the structural evolution mechanism.
 
@@ -159,9 +159,9 @@ The scoring forest should participate in **three phases**, not only the last one
 
 A generic single-score model may be written:
 
-\[
-P^* \in \underset{P\in\mathcal A(K,s)}{\operatorname{argmax}}\; \widehat V_F(P\mid K,s,e),
-\]
+$$
+P^* \in \underset{P\in\mathcal A(K,s)}{operatorname{argmax}}\; \widehat V_F(P\mid K,s,e),
+$$
 
 where \(\mathcal A(K,s)\) is the set of **contract-admissible** candidate paths at state \(s\), and \(e\) is the current evidence. This is a simplified case. In general, \(\widehat V_F\) may be a vector, partial ordering, set of rules, or a deliberative decision procedure; no scalar optimum need exist.
 
@@ -181,15 +181,15 @@ The scorer can specify *which evidence to collect* before and during execution. 
 
 Let \(s_t\) be the observed execution state, \(e_t\) the accumulated evidence, and \(K_t\) the active contract version. An abstract cycle is:
 
-\[
+$$
 \begin{aligned}
-q_t &= \operatorname{Guide}(F_t,K_t,s_t,e_t),\\
-a_t &= \operatorname{AuthorizeAndSelect}(q_t,K_t),\\
-(s_{t+1},o_{t+1}) &= \operatorname{Execute}(P_t,a_t,s_t),\\
-e_{t+1} &= \operatorname{AppendEvidence}(e_t,o_{t+1}),\\
-F_{t+1} &= \operatorname{UpdateIfValidated}(F_t,e_{t+1}).
+q_t &= operatorname{Guide}(F_t,K_t,s_t,e_t),\\
+a_t &= operatorname{AuthorizeAndSelect}(q_t,K_t),\\
+(s_{t+1},o_{t+1}) &= operatorname{Execute}(P_t,a_t,s_t),\\
+e_{t+1} &= operatorname{AppendEvidence}(e_t,o_{t+1}),\\
+F_{t+1} &= operatorname{UpdateIfValidated}(F_t,e_{t+1}).
 \end{aligned}
-\]
+$$
 
 This describes **logical responsibilities**, not a mandatory software architecture. The scorer may remain unchanged during many steps; humans may approve decisions; and some actions are non-reversible. Updating a scoring forest is not equivalent to silently changing a contractual target mid-execution.
 
@@ -223,9 +223,9 @@ Advanced guidance may decide not only **which path to select** but also **which 
 
 A useful exploratory criterion may include predicted task value, information gain, risk, and resource cost:
 
-\[
+$$
 J(P_i)=\mathbb E[V(P_i)]+\lambda I(P_i)-\mu R(P_i)-\nu C(P_i),
-\]
+$$
 
 **only after** contract admissibility and hard constraints are enforced. The coefficients are context-dependent, and this expression is a research heuristic rather than a universal optimization law.
 
@@ -245,9 +245,9 @@ Different stakeholders may score the same path differently. For example, a custo
 
 For a path \(P\), consider:
 
-\[
+$$
 \mathbf v(P)=(v_{\mathrm{quality}},v_{\mathrm{time}},v_{\mathrm{cost}},v_{\mathrm{safety}}).
-\]
+$$
 
 A **contractual aggregation operator** may be used when the parties agree on one. Otherwise, the outcome can remain a Pareto set, an unresolved conflict, or a decision requiring an authorized human or governance process.
 
@@ -259,9 +259,9 @@ A higher-level unit may compose child units \(U_1,\ldots,U_n\) into a macro-unit
 
 In general:
 
-\[
+$$
 V_{\mathrm{macro}}\ne\sum_{i=1}^{n}V_i.
-\]
+$$
 
 Interactions matter: a locally efficient path may delay a downstream dependency, exhaust a shared resource, or violate a system-level safety gate. The parent forest therefore requires explicit composition rules, including:
 
