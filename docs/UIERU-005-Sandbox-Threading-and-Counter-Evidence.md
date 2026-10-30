@@ -99,10 +99,10 @@ where $V_i$ is expected task contribution, $I_i$ expected information gain, $D_i
 This heuristic is **not** a license to trade away hard safety requirements. A thread is eligible only if it satisfies independent constraints:
 
 $$
-operatorname{Eligible}(i) =
-operatorname{Authorized}(i) \land
-operatorname{WithinBudget}(i) \land
-operatorname{WithinRiskLimits}(i).
+\mathrm{Eligible}(i) =
+\mathrm{Authorized}(i) \land
+\mathrm{WithinBudget}(i) \land
+\mathrm{WithinRiskLimits}(i).
 $$
 
 Where probability estimates are unreliable, the scheduler should use intervals, qualitative uncertainty, or conservative rules rather than fabricated precision. The system may also reserve resources for challenge trails even when their immediate expected task score is low.

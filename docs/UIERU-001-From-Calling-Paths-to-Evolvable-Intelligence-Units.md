@@ -143,7 +143,7 @@ A useful scoring architecture has at least three operating horizons.
 For a feasible candidate set $\mathcal{P}_{K}$ under contract $K$, a conceptual decision rule is:
 
 $$
-P^* \in operatorname*{arg\,max}_{P\in\mathcal{P}_{K}}
+P^* \in \mathrm*{arg\,max}_{P\in\mathcal{P}_{K}}
 V_F(P\mid K,X,E_{\mathrm{obs}})
 $$
 
@@ -232,7 +232,7 @@ UIERUs may be nested and composed to form larger functions. A software-developme
 Conceptually:
 
 $$
-U_{\mathrm{macro}}=operatorname{Compose}(U_1,\ldots,U_n;K_{\mathrm{macro}})
+U_{\mathrm{macro}}=\mathrm{Compose}(U_1,\ldots,U_n;K_{\mathrm{macro}})
 $$
 
 Composition is **not automatically valid**. It requires checking:

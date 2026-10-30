@@ -160,11 +160,11 @@ Different objectives can require separate trees or evaluators: quality, cost, ti
 For illustrative feasible paths `p`:
 
 $$
-\mathcal P_{\mathrm{feasible}}=\{p\in\mathcal P:operatorname{HardConstraints}(p,K)=\mathrm{true}\}
+\mathcal P_{\mathrm{feasible}}=\{p\in\mathcal P:\mathrm{HardConstraints}(p,K)=\mathrm{true}\}
 $$
 
 $$
- p^*\in operatorname{Select}_{F}(\mathcal P_{\mathrm{feasible}},K,\mathcal E)
+ p^*\in \mathrm{Select}_{F}(\mathcal P_{\mathrm{feasible}},K,\mathcal E)
 $$
 
 Here `Select_F` may implement ranking, Pareto filtering, human approval, or a policy-controlled search; `\mathcal E` denotes available evidence. This avoids implying that every situation admits a valid globally optimal scalar score.
@@ -310,7 +310,7 @@ A useful portfolio includes paths that did not win. Rejected approaches may expo
 A larger unit may coordinate child units:
 
 $$
-U_{\mathrm{parent}}=operatorname{Compose}(U_1,\ldots,U_n;K_{\mathrm{parent}})
+U_{\mathrm{parent}}=\mathrm{Compose}(U_1,\ldots,U_n;K_{\mathrm{parent}})
 $$
 
 Valid composition requires more than matching input/output types:

@@ -119,7 +119,7 @@ subject to:
 
 $$
 p\in\mathcal{P}_{\mathrm{authorized}},\qquad
-operatorname{HardConstraints}(p,K)=\mathrm{true}.
+\mathrm{HardConstraints}(p,K)=\mathrm{true}.
 $$
 
 The utility is a decision aid, **not** permission to trade away hard safety, legal, privacy, or authorization constraints. When perspectives are incommensurable, the system should retain a Pareto set, use lexicographic priorities, or escalate to an authorized decision-maker rather than invent a misleading scalar total.

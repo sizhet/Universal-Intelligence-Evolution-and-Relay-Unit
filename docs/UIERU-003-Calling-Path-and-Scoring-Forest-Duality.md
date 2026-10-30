@@ -160,7 +160,7 @@ The scoring forest should participate in **three phases**, not only the last one
 A generic single-score model may be written:
 
 $$
-P^* \in \underset{P\in\mathcal A(K,s)}{operatorname{argmax}}\; \widehat V_F(P\mid K,s,e),
+P^* \in \underset{P\in\mathcal A(K,s)}{\mathrm{argmax}}\; \widehat V_F(P\mid K,s,e),
 $$
 
 where $\mathcal A(K,s)$ is the set of **contract-admissible** candidate paths at state $s$, and $e$ is the current evidence. This is a simplified case. In general, $\widehat V_F$ may be a vector, partial ordering, set of rules, or a deliberative decision procedure; no scalar optimum need exist.
@@ -183,11 +183,11 @@ Let $s_t$ be the observed execution state, $e_t$ the accumulated evidence, and $
 
 $$
 \begin{aligned}
-q_t &= operatorname{Guide}(F_t,K_t,s_t,e_t),\\
-a_t &= operatorname{AuthorizeAndSelect}(q_t,K_t),\\
-(s_{t+1},o_{t+1}) &= operatorname{Execute}(P_t,a_t,s_t),\\
-e_{t+1} &= operatorname{AppendEvidence}(e_t,o_{t+1}),\\
-F_{t+1} &= operatorname{UpdateIfValidated}(F_t,e_{t+1}).
+q_t &= \mathrm{Guide}(F_t,K_t,s_t,e_t),\\
+a_t &= \mathrm{AuthorizeAndSelect}(q_t,K_t),\\
+(s_{t+1},o_{t+1}) &= \mathrm{Execute}(P_t,a_t,s_t),\\
+e_{t+1} &= \mathrm{AppendEvidence}(e_t,o_{t+1}),\\
+F_{t+1} &= \mathrm{UpdateIfValidated}(F_t,e_{t+1}).
 \end{aligned}
 $$
 
