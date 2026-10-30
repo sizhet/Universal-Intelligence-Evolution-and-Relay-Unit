@@ -113,7 +113,7 @@ Each evaluator should declare:
 - Hard constraints versus negotiable preferences.
 - Its provenance, version, and known failure conditions.
 
-For candidate path \(p\), an illustrative representation is:
+For candidate path $p$, an illustrative representation is:
 
 $$
 S(p) = \{s_{quality}(p), s_{cost}(p), s_{risk}(p), s_{latency}(p), s_{learning}(p)\}
@@ -307,7 +307,7 @@ The technical ability to extract a reusable pattern does not itself establish pe
 
 UIERU adds coordination overhead: contracts, provenance, evaluator calls, sandbox compute, registry maintenance, and review. The architecture is justified only where these costs are offset by benefits such as reduced failures, improved reuse, safer delegation, or faster validated improvement.
 
-For a workload family \(w\), an illustrative decision criterion is:
+For a workload family $w$, an illustrative decision criterion is:
 
 $$
 \Delta V_w = V_{quality} + V_{reuse} + V_{risk\ reduction}

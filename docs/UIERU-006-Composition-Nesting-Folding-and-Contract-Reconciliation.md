@@ -63,7 +63,7 @@ These are proposed logical interfaces, not a claim that all systems must expose 
 
 ## 3. Composition Is Not the Same as Nesting
 
-Let \(\mathcal{U}=\{U_1,\ldots,U_n\}\) be participating units and \(G_C=(\mathcal{U},D)\) a directed dependency graph, where \(D\) represents data, authority, or workflow dependencies. A **composition** combines units to satisfy a larger contract. A **nesting relation** assigns a child unit to the internal organization of a parent, with explicit scope of delegation.
+Let $\mathcal{U}=\{U_1,\ldots,U_n\}$ be participating units and $G_C=(\mathcal{U},D)$ a directed dependency graph, where $D$ represents data, authority, or workflow dependencies. A **composition** combines units to satisfy a larger contract. A **nesting relation** assigns a child unit to the internal organization of a parent, with explicit scope of delegation.
 
 A composed workflow need not have a single parent. For example, two independently governed organizations may exchange verified relay packets without surrendering their local scoring sovereignty. Conversely, a nested child may be invoked repeatedly in several branches of a parent's Calling Graph.
 
@@ -88,7 +88,7 @@ Hybrid structures are normal. Composition should therefore be modeled as a graph
 
 ## 4. Calling Graph Composition: Paths, Dependencies, and Recovery
 
-Each unit has an internal Calling Path or Calling Graph fragment \(P_i\). Composition creates inter-unit edges that connect exit conditions of one fragment to entry conditions of another. An edge should specify more than “next step”:
+Each unit has an internal Calling Path or Calling Graph fragment $P_i$. Composition creates inter-unit edges that connect exit conditions of one fragment to entry conditions of another. An edge should specify more than “next step”:
 
 $$
 e_{ij}=(\text{trigger},\text{input mapping},\text{preconditions},\text{authority},\text{failure policy})
@@ -110,13 +110,13 @@ Not all real-world actions are reversible. Compensation is a best-effort enginee
 
 Naive composition assumes that if units can exchange data, they can be safely combined. This is false. Two units may agree on data types but disagree on authority, timing, safety, privacy, objectives, or responsibility.
 
-Let \(K_i\) denote the contract of unit \(U_i\). A parent or coordinating unit proposes an effective composite contract:
+Let $K_i$ denote the contract of unit $U_i$. A parent or coordinating unit proposes an effective composite contract:
 
 $$
 K_C=operatorname{Reconcile}(K_1,\ldots,K_n;K_{\mathrm{parent}},\Pi)
 $$
 
-where \(\Pi\) represents applicable governance policies and reconciliation rules. The operator may return a valid contract, a conditional contract requiring approval, or a conflict report. **It must not be assumed to always succeed.**
+where $\Pi$ represents applicable governance policies and reconciliation rules. The operator may return a valid contract, a conditional contract requiring approval, or a conflict report. **It must not be assumed to always succeed.**
 
 ### 5.1 Reconciliation dimensions
 
@@ -135,13 +135,13 @@ where \(\Pi\) represents applicable governance policies and reconciliation rules
 
 A practical reconciliation process distinguishes **hard constraints**, which cannot be traded away, from **soft objectives**, which may be optimized within the feasible set. For example, cost and delivery speed may be negotiable, while a safety interlock is not.
 
-A feasible composite plan \(x\) must satisfy:
+A feasible composite plan $x$ must satisfy:
 
 $$
 x\in\bigcap_i \mathcal{C}_i \cap \mathcal{C}_{\mathrm{parent}}
 $$
 
-where \(\mathcal{C}_i\) is the applicable constraint set of each participating unit. Empty intersection means the proposed composition is infeasible under current contracts. The correct output is a conflict or redesign request, not an invented compromise.
+where $\mathcal{C}_i$ is the applicable constraint set of each participating unit. Empty intersection means the proposed composition is infeasible under current contracts. The correct output is a conflict or redesign request, not an invented compromise.
 
 ## 6. Delegation, Sovereignty, and Accountability
 
@@ -157,7 +157,7 @@ A defensible delegation record includes the grantor, grantee, authorized action 
 
 ## 7. Scoring Forest Composition: Why Scores Cannot Simply Be Added
 
-Each unit may use a Scoring Forest \(F_i\) to guide its own decisions. Forests can represent multiple perspectives: cost, quality, reliability, safety, fairness, customer value, learning potential, or other domain-specific objectives.
+Each unit may use a Scoring Forest $F_i$ to guide its own decisions. Forests can represent multiple perspectives: cost, quality, reliability, safety, fairness, customer value, learning potential, or other domain-specific objectives.
 
 A tempting but generally invalid rule is:
 
@@ -173,7 +173,7 @@ $$
 F_C=operatorname{Fold}(F_1,\ldots,F_n;K_C,\Gamma,\Omega)
 $$
 
-where \(\Gamma\) contains cross-unit dependencies and \(\Omega\) specifies normalization, uncertainty, evidence provenance, and aggregation policy. This is an architectural signature, not a uniquely defined mathematical solution.
+where $\Gamma$ contains cross-unit dependencies and $\Omega$ specifies normalization, uncertainty, evidence provenance, and aggregation policy. This is an architectural signature, not a uniquely defined mathematical solution.
 
 ### 7.1 A defensible folding sequence
 
@@ -203,7 +203,7 @@ $$
 operatorname{Value}_{F_C}(\pi\mid E_t,K_C,B_t)
 $$
 
-Here \(E_t\) is current evidence and \(B_t\) the remaining resource budget. The expression identifies the optimization target but does not imply that an exact optimizer is always available. Heuristics, human review, constraint solvers, and learned policies are all possible implementations.
+Here $E_t$ is current evidence and $B_t$ the remaining resource budget. The expression identifies the optimization target but does not imply that an exact optimizer is always available. Heuristics, human review, constraint solvers, and learned policies are all possible implementations.
 
 ### 8.1 Replanning triggers
 
@@ -293,7 +293,7 @@ The receiving unit should validate schema compatibility, provenance, authority s
 
 A UIERU may evolve its local Calling Path, Scoring Forest, contract templates, or relay strategy. But changing a child can break the assumptions of its parent or peers. Evolution therefore needs a compatibility discipline.
 
-A candidate structural delta \(\Delta_i\) should carry:
+A candidate structural delta $\Delta_i$ should carry:
 
 $$
 \Delta_i=(\text{target},\text{change},\text{evidence},\text{tests},\text{compatibility},\text{rollback})

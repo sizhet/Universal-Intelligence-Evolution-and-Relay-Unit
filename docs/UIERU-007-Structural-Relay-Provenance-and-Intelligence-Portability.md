@@ -74,7 +74,7 @@ operatorname{Authorized}(a,B) \land
 operatorname{Verifiable}(a,B)
 $$
 
-Here \(a\) is a proposed artifact and \(B\) a receiving context. This conjunction is a conceptual acceptance criterion, not a claim that each term has a universal numeric metric. Some artifacts can be retained as *reference-only* even when execution portability fails.
+Here $a$ is a proposed artifact and $B$ a receiving context. This conjunction is a conceptual acceptance criterion, not a claim that each term has a universal numeric metric. Some artifacts can be retained as *reference-only* even when execution portability fails.
 
 ## 4. What Exactly Should Be Relayed?
 
@@ -218,7 +218,7 @@ $$
 L_B(a, K_B, Env_B) \rightarrow (a_B, \Delta_B, Q_B)
 $$
 
-where \(a\) is the incoming artifact, \(K_B\) the receiving contract, \(Env_B\) the local environment, \(a_B\) the adapted candidate, \(\Delta_B\) the recorded changes, and \(Q_B\) the outstanding validation questions.
+where $a$ is the incoming artifact, $K_B$ the receiving contract, $Env_B$ the local environment, $a_B$ the adapted candidate, $\Delta_B$ the recorded changes, and $Q_B$ the outstanding validation questions.
 
 A safe localization workflow:
 

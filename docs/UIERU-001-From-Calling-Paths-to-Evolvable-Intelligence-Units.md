@@ -75,11 +75,11 @@ $$
 
 where:
 
-- \(K\): **Contract** — scope, actors, goals, object states, authority, and constraints;
-- \(P\): **Path** — executable or observable calling graph/path, including state and evidence;
-- \(F\): **Forest** — perspective-aware guidance, evaluation, and settlement structure;
-- \(R\): **Relay** — handoff contracts, provenance, evidence, and portable outputs;
-- \(E\): **Evolution** — candidate trails, residuals, structural deltas, validation, and versioning.
+- $K$: **Contract** — scope, actors, goals, object states, authority, and constraints;
+- $P$: **Path** — executable or observable calling graph/path, including state and evidence;
+- $F$: **Forest** — perspective-aware guidance, evaluation, and settlement structure;
+- $R$: **Relay** — handoff contracts, provenance, evidence, and portable outputs;
+- $E$: **Evolution** — candidate trails, residuals, structural deltas, validation, and versioning.
 
 This is a **design decomposition**, not a mathematical proof of universality. The components may be lightweight, delegated, or implemented by existing tools. A UIERU need not be an autonomous agent or an independent conscious subject.
 
@@ -140,14 +140,14 @@ A useful scoring architecture has at least three operating horizons.
 | **During** | Should we continue, branch, pause, or replan? | Monitor evidence, detect deviations, adjust guidance |
 | **After** | What was achieved and what can be reused? | Evaluate outcomes, settle obligations, record counter-evidence and residuals |
 
-For a feasible candidate set \(\mathcal{P}_{K}\) under contract \(K\), a conceptual decision rule is:
+For a feasible candidate set $\mathcal{P}_{K}$ under contract $K$, a conceptual decision rule is:
 
 $$
 P^* \in operatorname*{arg\,max}_{P\in\mathcal{P}_{K}}
 V_F(P\mid K,X,E_{\mathrm{obs}})
 $$
 
-Here \(X\) denotes relevant context, \(E_{\mathrm{obs}}\) available evidence, and \(V_F\) a context- and perspective-dependent evaluation produced by the Scoring Forest. This notation does **not** imply that the system can enumerate all possible paths, calculate exact values, or solve global optimization. In practice, candidate generation and scoring can be heuristic, approximate, hierarchical, learned, or human-assisted.
+Here $X$ denotes relevant context, $E_{\mathrm{obs}}$ available evidence, and $V_F$ a context- and perspective-dependent evaluation produced by the Scoring Forest. This notation does **not** imply that the system can enumerate all possible paths, calculate exact values, or solve global optimization. In practice, candidate generation and scoring can be heuristic, approximate, hierarchical, learned, or human-assisted.
 
 **Hard constraints must be enforced independently of compensatory utility scores.** A high expected benefit cannot justify violating a non-negotiable authorization, safety, or privacy constraint.
 
@@ -192,7 +192,7 @@ J(T_i)=\mathbb{E}[V(T_i)]
 +\lambda I(T_i)-\mu C(T_i)-\nu R(T_i)
 $$
 
-where \(I\) represents expected information or structural-learning value, \(C\) exploration cost, and \(R\) modeled risk. The coefficients are context-dependent; this expression is a **research heuristic**, not a validated universal formula. Feasibility and hard safety constraints remain separate.
+where $I$ represents expected information or structural-learning value, $C$ exploration cost, and $R$ modeled risk. The coefficients are context-dependent; this expression is a **research heuristic**, not a validated universal formula. Feasibility and hard safety constraints remain separate.
 
 ### 5.1 Sandboxes versus live execution
 

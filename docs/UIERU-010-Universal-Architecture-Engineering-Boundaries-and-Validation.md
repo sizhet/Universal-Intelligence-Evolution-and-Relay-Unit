@@ -131,14 +131,14 @@ These steps may be abbreviated. A task that does not merit multi-trail explorati
 
 A retrospective evaluator scores an outcome after the path has run. A **forward-guiding** scoring forest also affects which paths are attempted, when evidence is requested, and when resources are reallocated.
 
-At state \(s_t\), with candidate actions \(A_t\), contract \(K\), and available evidence \(D_t\), a policy may select:
+At state $s_t$, with candidate actions $A_t$, contract $K$, and available evidence $D_t$, a policy may select:
 
 $$
 a_t \in operatorname*{arg\,max}_{a \in A_t \cap operatorname{Allowed}(K,s_t)}
 G_F(a \mid s_t,D_t,K),
 $$
 
-where \(G_F\) represents a contract-constrained aggregation of perspectives such as expected task benefit, uncertainty reduction, execution cost, reversibility, and risk. This expression is **illustrative**, not a universal objective function. Some constraints must be enforced as hard predicates rather than traded against a score.
+where $G_F$ represents a contract-constrained aggregation of perspectives such as expected task benefit, uncertainty reduction, execution cost, reversibility, and risk. This expression is **illustrative**, not a universal objective function. Some constraints must be enforced as hard predicates rather than traded against a score.
 
 ### 5.1 The three guidance horizons
 
@@ -190,7 +190,7 @@ A failed trail can yield boundary conditions, reproducible counterexamples, warn
 
 UIERUs can be sequential, parallel, hierarchical, or federated. A parent unit may delegate a scoped task to a child, but the child's effective authority must not exceed the intersection of its own grant and the parent's delegation.
 
-For a delegated operation \(x\), a conservative admission rule is:
+For a delegated operation $x$, a conservative admission rule is:
 
 $$
 operatorname{Permit}(x) =

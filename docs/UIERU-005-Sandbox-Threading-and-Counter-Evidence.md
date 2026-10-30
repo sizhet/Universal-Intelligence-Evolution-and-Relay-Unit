@@ -88,13 +88,13 @@ Thus the scoring structure evaluates both **candidate paths** and the **search p
 
 ## 6. A Budget-Aware Threading Objective
 
-For a proposed thread \(i\), consider a research heuristic
+For a proposed thread $i$, consider a research heuristic
 
 $$
 J_i = \mathbb{E}[V_i] + \lambda I_i + \eta D_i - \mu C_i - \nu R_i,
 $$
 
-where \(V_i\) is expected task contribution, \(I_i\) expected information gain, \(D_i\) expected diversity or counter-evidence value, \(C_i\) resource cost, and \(R_i\) estimated risk. The weights depend on the contract and perspective.
+where $V_i$ is expected task contribution, $I_i$ expected information gain, $D_i$ expected diversity or counter-evidence value, $C_i$ resource cost, and $R_i$ estimated risk. The weights depend on the contract and perspective.
 
 This heuristic is **not** a license to trade away hard safety requirements. A thread is eligible only if it satisfies independent constraints:
 

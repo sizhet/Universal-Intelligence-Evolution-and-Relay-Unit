@@ -80,14 +80,14 @@ Afterward, the system reconciles predictions with observations, identifies viola
 
 ## 4. Calling Path–Scoring Forest Coupling
 
-Let \(\mathcal{P}_t\) denote the available candidate trails at time \(t\), \(x_t\) the observed task state, and \(K\) the governing contract. A conceptual controller performs:
+Let $\mathcal{P}_t$ denote the available candidate trails at time $t$, $x_t$ the observed task state, and $K$ the governing contract. A conceptual controller performs:
 
 $$
 (\mathcal{P}_{t+1}, a_t, b_t)
 =\pi_F(\mathcal{P}_t,x_t,K,H_t)
 $$
 
-Here \(a_t\) is the next permitted action or branch decision, \(b_t\) is the exploration budget allocation, and \(H_t\) is accumulated evidence. The policy \(\pi_F\) is not necessarily a learned neural policy: it may be a rule system, optimizer, human-led process, LLM-assisted planner, or hybrid.
+Here $a_t$ is the next permitted action or branch decision, $b_t$ is the exploration budget allocation, and $H_t$ is accumulated evidence. The policy $\pi_F$ is not necessarily a learned neural policy: it may be a rule system, optimizer, human-led process, LLM-assisted planner, or hybrid.
 
 The coupling has two directions:
 
@@ -101,13 +101,13 @@ This duality is operational only when feedback can influence subsequent decision
 
 Real tasks combine multiple, potentially incompatible perspectives: task quality, speed, cost, safety, user preference, organizational policy, and information gain. A Scoring Forest preserves distinct scoring trees or operators so that disagreements remain inspectable.
 
-For candidate trail \(p\), define a descriptive score vector:
+For candidate trail $p$, define a descriptive score vector:
 
 $$
 \mathbf{s}(p)=[q(p),c(p),r(p),i(p),u(p),g(p)]
 $$
 
-where \(q\) is task quality, \(c\) cost, \(r\) risk, \(i\) expected information gain, \(u\) uncertainty, and \(g\) governance or contractual fit. These quantities may be estimates with intervals, not precise facts.
+where $q$ is task quality, $c$ cost, $r$ risk, $i$ expected information gain, $u$ uncertainty, and $g$ governance or contractual fit. These quantities may be estimates with intervals, not precise facts.
 
 A provisional utility for **feasible** trails might be:
 

@@ -68,7 +68,7 @@ $$
 \mathcal{G} = (\mathcal{U}, \mathcal{L})
 $$
 
-Here, \(\mathcal{U}\) is the set of participating units and \(\mathcal{L}\) contains authorized relay channels. These channels may be one-way, reciprocal, time-limited, or mediated by registries. A connected graph does not imply universal trust or uniform scoring.
+Here, $\mathcal{U}$ is the set of participating units and $\mathcal{L}$ contains authorized relay channels. These channels may be one-way, reciprocal, time-limited, or mediated by registries. A connected graph does not imply universal trust or uniform scoring.
 
 ## 3. From One-Way Handoff to Bidirectional Learning
 
@@ -218,13 +218,13 @@ This is an architectural requirement, not an emergent property that can be assum
 
 ## 6. Collective Learning as an Evidence-Driven Loop
 
-Let \(H_i\) denote unit \(i\)'s local store of accepted structures, hypotheses, and evidence. A received portfolio \(r\) is not automatically inserted into \(H_i\). Instead:
+Let $H_i$ denote unit $i$'s local store of accepted structures, hypotheses, and evidence. A received portfolio $r$ is not automatically inserted into $H_i$. Instead:
 
 $$
 H_i^{t+1} = operatorname{Update}(H_i^t,operatorname{Validate}_i(r),e_i)
 $$
 
-where \(e_i\) is local evidence and \(operatorname{Validate}_i\) is receiver-specific. `Update` may preserve a rejected candidate as counter-evidence rather than discarding it.
+where $e_i$ is local evidence and $operatorname{Validate}_i$ is receiver-specific. `Update` may preserve a rejected candidate as counter-evidence rather than discarding it.
 
 A bidirectional learning cycle consists of:
 

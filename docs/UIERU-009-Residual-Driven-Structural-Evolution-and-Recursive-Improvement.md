@@ -62,13 +62,13 @@ Changes to the evaluator or evolution policy itself require stronger review than
 
 A **residual** is an observed discrepancy between an expected or desired property and a measured outcome, subject to measurement uncertainty and context. Examples include schedule overrun, repeated rework, contract violation, unexpected tool failure, unexplained disagreement among evaluators, or an unanticipated successful alternative.
 
-For metric \(j\), a simple diagnostic residual is:
+For metric $j$, a simple diagnostic residual is:
 
 $$
 r_j = y_j - \hat{y}_j
 $$
 
-where \(y_j\) is the observed result and \(\hat{y}_j\) is the forecast or reference. This expression is only meaningful when the metric definition, unit, observation window, and uncertainty are preserved.
+where $y_j$ is the observed result and $\hat{y}_j$ is the forecast or reference. This expression is only meaningful when the metric definition, unit, observation window, and uncertainty are preserved.
 
 Residuals may be **negative** (a shortfall), **positive** (unexpected outperformance), **structural** (missing path or interface), **normative** (conflicting requirements), or **epistemic** (insufficient evidence). A residual is not proof of its own cause. In the lawn-service example, an overrun could reflect terrain, weather, staffing, a bad estimate, or an incorrect timestamp.
 
@@ -94,7 +94,7 @@ $$
 \Delta U = (\Delta K, \Delta P, \Delta F, \Delta R, \Delta E)
 $$
 
-Most candidates modify only a subset of these elements. For example, a slope-related residual might yield a new terrain-inspection step (\(\Delta P\)) and a conditional equipment-risk criterion (\(\Delta F\)), while leaving the contract unchanged.
+Most candidates modify only a subset of these elements. For example, a slope-related residual might yield a new terrain-inspection step ($\Delta P$) and a conditional equipment-risk criterion ($\Delta F$), while leaving the contract unchanged.
 
 Each candidate must specify:
 
@@ -132,7 +132,7 @@ $$
 operatorname*{select}_{d \in D} \; \mathbb{E}[V(d) \mid H] - C_{test}(d) - \lambda Risk(d)
 $$
 
-subject to authorization, safety, resource, and coverage constraints. Here \(H\) denotes current evidence; the formula is a design abstraction, not a universally valid estimator. In practice, uncertainty intervals, veto rules, and non-comparable stakeholder perspectives must be retained rather than forced into a single score.
+subject to authorization, safety, resource, and coverage constraints. Here $H$ denotes current evidence; the formula is a design abstraction, not a universally valid estimator. In practice, uncertainty intervals, veto rules, and non-comparable stakeholder perspectives must be retained rather than forced into a single score.
 
 ### 6.1 Multi-trail evolution portfolio
 
@@ -231,7 +231,7 @@ A bounded design separates:
 5. **Immutable evidence store:** preserves baselines and test outcomes.
 6. **Rollback mechanism:** restores the last approved version.
 
-For changes to \(F\) or \(E\), use a stable external reference evaluator, frozen benchmark set plus newly collected challenge cases, and explicit governance approval. Benchmark freezing alone is insufficient because the world can shift and benchmarks can be gamed.
+For changes to $F$ or $E$, use a stable external reference evaluator, frozen benchmark set plus newly collected challenge cases, and explicit governance approval. Benchmark freezing alone is insufficient because the world can shift and benchmarks can be gamed.
 
 ### 9.1 Levels of improvement
 
@@ -281,7 +281,7 @@ The URI strings above are illustrative identifiers, not live resources. A receiv
 
 ## 11. Relay of Evolutionary Knowledge
 
-The relay component \(R\) carries more than the latest successful configuration. A useful **Evolution Relay Portfolio** includes:
+The relay component $R$ carries more than the latest successful configuration. A useful **Evolution Relay Portfolio** includes:
 
 - Approved changes and precise operating conditions.
 - Rejected candidates and the evidence for rejection.
@@ -411,7 +411,7 @@ The prototype should first demonstrate that it can **reject an attractive but un
 This paper is self-contained, but its interfaces connect to the companion documents:
 
 - **UIERU-001:** Motivation and the evolvable intelligence-unit concept.
-- **UIERU-002:** Canonical \(K,P,F,R,E\) contract and runtime structure.
+- **UIERU-002:** Canonical $K,P,F,R,E$ contract and runtime structure.
 - **UIERU-003:** Calling Path–Scoring Forest duality.
 - **UIERU-004:** Forward guidance and multi-trail search.
 - **UIERU-005:** Sandbox threading and counter-evidence.

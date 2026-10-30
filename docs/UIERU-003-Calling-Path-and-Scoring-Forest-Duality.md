@@ -47,9 +47,9 @@ $$
 G_C=(N_C,E_C,\tau,\sigma),
 $$
 
-where nodes represent actions, services, observations, decisions, or nested units; edges represent admissible calls, dependencies, transitions, or handoffs; \(\tau\) assigns types; and \(\sigma\) holds execution-relevant state or metadata.
+where nodes represent actions, services, observations, decisions, or nested units; edges represent admissible calls, dependencies, transitions, or handoffs; $\tau$ assigns types; and $\sigma$ holds execution-relevant state or metadata.
 
-A **calling path** \(P\) is an execution trace, plan, or structured subgraph of \(G_C\). The term *path* is deliberately broad here: it may include conditional branches, bounded loops, parallel threads, and a nested calling graph. A trace records what occurred; a plan records what is intended; neither should be silently confused with the other.
+A **calling path** $P$ is an execution trace, plan, or structured subgraph of $G_C$. The term *path* is deliberately broad here: it may include conditional branches, bounded loops, parallel threads, and a nested calling graph. A trace records what occurred; a plan records what is intended; neither should be silently confused with the other.
 
 Calling structures can preserve order, dependencies, inputs and outputs, provenance, and reusable precedents. They do **not**, merely by existing, provide a complete theory of goal selection, preference, authority, or settlement.
 
@@ -61,7 +61,7 @@ $$
 F=\{T_1,T_2,\ldots,T_m\},
 $$
 
-where each \(T_j\) may represent a task objective, stakeholder perspective, safety criterion, resource constraint, or specialized valuation model. The forest may combine numeric scores, ordinal judgments, logical gates, hard constraints, and human decisions. It need not be differentiable or reducible to one scalar.
+where each $T_j$ may represent a task objective, stakeholder perspective, safety criterion, resource constraint, or specialized valuation model. The forest may combine numeric scores, ordinal judgments, logical gates, hard constraints, and human decisions. It need not be differentiable or reducible to one scalar.
 
 **Scoring folding** summarizes or reconciles lower-level evidence and scores into a decision at a higher level, subject to explicitly declared aggregation and veto rules. Folding must not erase provenance, unresolved disagreement, or non-compensable constraints merely to produce a convenient single number.
 
@@ -81,9 +81,9 @@ $$
 U=(K,P,F,R,E),
 $$
 
-where \(K\) is the governing contract, \(P\) the calling path, \(F\) the scoring forest, \(R\) the relay interface, and \(E\) the structural evolution mechanism.
+where $K$ is the governing contract, $P$ the calling path, $F$ the scoring forest, $R$ the relay interface, and $E$ the structural evolution mechanism.
 
-This paper concentrates on the **\(P\leftrightarrow F\)** interaction. Its operation remains bounded by \(K\): the scorer cannot grant itself permissions, and the executor cannot silently redefine acceptance criteria. The relay \(R\) preserves decisions and evidence; evolution \(E\) may propose modifications but must pass validation before deployment.
+This paper concentrates on the **$P\leftrightarrow F$** interaction. Its operation remains bounded by $K$: the scorer cannot grant itself permissions, and the executor cannot silently redefine acceptance criteria. The relay $R$ preserves decisions and evidence; evolution $E$ may propose modifications but must pass validation before deployment.
 
 ```text
                     Contract K
@@ -163,7 +163,7 @@ $$
 P^* \in \underset{P\in\mathcal A(K,s)}{operatorname{argmax}}\; \widehat V_F(P\mid K,s,e),
 $$
 
-where \(\mathcal A(K,s)\) is the set of **contract-admissible** candidate paths at state \(s\), and \(e\) is the current evidence. This is a simplified case. In general, \(\widehat V_F\) may be a vector, partial ordering, set of rules, or a deliberative decision procedure; no scalar optimum need exist.
+where $\mathcal A(K,s)$ is the set of **contract-admissible** candidate paths at state $s$, and $e$ is the current evidence. This is a simplified case. In general, $\widehat V_F$ may be a vector, partial ordering, set of rules, or a deliberative decision procedure; no scalar optimum need exist.
 
 ### 5.1 Separate hard gates from trade-offs
 
@@ -179,7 +179,7 @@ The scorer can specify *which evidence to collect* before and during execution. 
 
 ## 6. Closed-Loop Coupling and Temporal State
 
-Let \(s_t\) be the observed execution state, \(e_t\) the accumulated evidence, and \(K_t\) the active contract version. An abstract cycle is:
+Let $s_t$ be the observed execution state, $e_t$ the accumulated evidence, and $K_t$ the active contract version. An abstract cycle is:
 
 $$
 \begin{aligned}
@@ -243,7 +243,7 @@ The scorer may create, prioritize, throttle, pause, merge, or terminate trails. 
 
 Different stakeholders may score the same path differently. For example, a customer values timely completion and quality; a worker values safety and reasonable cost; a regulator imposes non-negotiable rules. A forest makes these perspectives visible without pretending they always collapse into one preference function.
 
-For a path \(P\), consider:
+For a path $P$, consider:
 
 $$
 \mathbf v(P)=(v_{\mathrm{quality}},v_{\mathrm{time}},v_{\mathrm{cost}},v_{\mathrm{safety}}).
@@ -255,7 +255,7 @@ A **contractual aggregation operator** may be used when the parties agree on one
 
 ## 9. Folding Without Losing What Matters
 
-A higher-level unit may compose child units \(U_1,\ldots,U_n\) into a macro-unit. The execution structure composes through dependencies, sequencing, parallelism, and handoffs. Its scoring structure must also reconcile child results and system-level constraints.
+A higher-level unit may compose child units $U_1,\ldots,U_n$ into a macro-unit. The execution structure composes through dependencies, sequencing, parallelism, and handoffs. Its scoring structure must also reconcile child results and system-level constraints.
 
 In general:
 
@@ -341,7 +341,7 @@ Observe residual
    -> version and relay the outcome
 ```
 
-A delta can modify \(P\), \(F\), their interface, or the governing contract, but changes to permissions and commitments require proper authorization. **Learning is not synonymous with automatic deployment.**
+A delta can modify $P$, $F$, their interface, or the governing contract, but changes to permissions and commitments require proper authorization. **Learning is not synonymous with automatic deployment.**
 
 ## 13. Minimal and Advanced Operating Profiles
 
