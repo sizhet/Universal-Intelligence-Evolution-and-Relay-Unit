@@ -135,7 +135,7 @@ The **Challenge** trail matters even if the Exploit trail succeeds. Recovery aft
 A budget-aware scheduler can prioritize trails using a conceptual decision function:
 
 $$
-operatorname{Priority}(t)=g(\text{expected benefit},\text{information gain},\text{risk},\text{cost},\text{authority})
+\mathrm{Priority}(t)=g(\text{expected benefit},\text{information gain},\text{risk},\text{cost},\text{authority})
 $$
 
 The function is intentionally unspecified: different organizations must calibrate and validate it. **No score overrides a hard authorization constraint.**

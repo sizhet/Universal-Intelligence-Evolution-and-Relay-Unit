@@ -152,7 +152,7 @@ $$
 $$
 
 $$
-a^* \in operatorname*{argmax}_{a \in \mathcal{A}_{\mathrm{feasible}}(s)} V(a \mid s, K, F)
+a^* \in \mathrm*{argmax}_{a \in \mathcal{A}_{\mathrm{feasible}}(s)} V(a \mid s, K, F)
 $$
 
 Here, `s` is the observed situation; `C_i` are mandatory constraints; and `V` is an illustrative, context-dependent valuation function. No universal weighting is presumed.

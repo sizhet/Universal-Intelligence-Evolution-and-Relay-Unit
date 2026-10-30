@@ -117,7 +117,7 @@ This expression is **not** a universal scalar objective. Hard safety and authori
 A forward-guidance decision can be written as:
 
 $$
-a^* = operatorname*{argmax}_{a \in A_{permitted}}\; \mathbb{E}[\Delta V \mid s, a, e]
+a^* = \mathrm*{argmax}_{a \in A_{permitted}}\; \mathbb{E}[\Delta V \mid s, a, e]
 $$
 
 where `s` is current state, `e` is available evidence, and `A_permitted` is the set of contract-compliant actions. Estimates must be calibrated experimentally; the formula defines a decision intent, not an already validated optimizer.
