@@ -70,7 +70,7 @@ No layer is assumed to be globally visible. Shared does not mean unrestricted.
 Let `s` be a subject, `t` a time, `e` an event, and `c` an authorized task context. Define:
 
 $$
-W_{s,t,c}= operatorname{Update}(W_{s,t-1,c},operatorname{Observe}_{s,c}(e),H_{s,t},B_{s,t},G_{s,t},V_{s,t})
+W_{s,t,c}= \mathrm{Update}(W_{s,t-1,c},\mathrm{Observe}_{s,c}(e),H_{s,t},B_{s,t},G_{s,t},V_{s,t})
 $$
 
 where `H` is accessible history, `B` capability/embodiment context, `G` goals, and `V` evaluative perspective. This is a **design notation**, not a claim that every world model has these explicit fields or that they can be measured without error.
