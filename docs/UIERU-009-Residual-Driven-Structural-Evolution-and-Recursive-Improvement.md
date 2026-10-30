@@ -129,7 +129,7 @@ Forward guidance applies not only to task execution but also to the choice of im
 A conceptual selection objective is:
 
 $$
-operatorname*{select}_{d \in D} \; \mathbb{E}[V(d) \mid H] - C_{test}(d) - \lambda Risk(d)
+\mathrm*{select}_{d \in D} \; \mathbb{E}[V(d) \mid H] - C_{test}(d) - \lambda Risk(d)
 $$
 
 subject to authorization, safety, resource, and coverage constraints. Here $H$ denotes current evidence; the formula is a design abstraction, not a universally valid estimator. In practice, uncertainty intervals, veto rules, and non-comparable stakeholder perspectives must be retained rather than forced into a single score.

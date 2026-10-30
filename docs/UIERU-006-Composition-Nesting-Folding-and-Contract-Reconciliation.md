@@ -113,7 +113,7 @@ Naive composition assumes that if units can exchange data, they can be safely co
 Let $K_i$ denote the contract of unit $U_i$. A parent or coordinating unit proposes an effective composite contract:
 
 $$
-K_C=operatorname{Reconcile}(K_1,\ldots,K_n;K_{\mathrm{parent}},\Pi)
+K_C=\mathrm{Reconcile}(K_1,\ldots,K_n;K_{\mathrm{parent}},\Pi)
 $$
 
 where $\Pi$ represents applicable governance policies and reconciliation rules. The operator may return a valid contract, a conditional contract requiring approval, or a conflict report. **It must not be assumed to always succeed.**
@@ -170,7 +170,7 @@ Local scores may differ in scale, reference population, uncertainty, incentives,
 We therefore propose a **perspective-aware folding operator**:
 
 $$
-F_C=operatorname{Fold}(F_1,\ldots,F_n;K_C,\Gamma,\Omega)
+F_C=\mathrm{Fold}(F_1,\ldots,F_n;K_C,\Gamma,\Omega)
 $$
 
 where $\Gamma$ contains cross-unit dependencies and $\Omega$ specifies normalization, uncertainty, evidence provenance, and aggregation policy. This is an architectural signature, not a uniquely defined mathematical solution.
@@ -200,7 +200,7 @@ A useful decision formulation is:
 
 $$
 \pi_C^*=\arg\max_{\pi\in\mathcal{P}_{\mathrm{feasible}}}
-operatorname{Value}_{F_C}(\pi\mid E_t,K_C,B_t)
+\mathrm{Value}_{F_C}(\pi\mid E_t,K_C,B_t)
 $$
 
 Here $E_t$ is current evidence and $B_t$ the remaining resource budget. The expression identifies the optimization target but does not imply that an exact optimizer is always available. Heuristics, human review, constraint solvers, and learned policies are all possible implementations.

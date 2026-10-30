@@ -134,7 +134,7 @@ A retrospective evaluator scores an outcome after the path has run. A **forward-
 At state $s_t$, with candidate actions $A_t$, contract $K$, and available evidence $D_t$, a policy may select:
 
 $$
-a_t \in operatorname*{arg\,max}_{a \in A_t \cap operatorname{Allowed}(K,s_t)}
+a_t \in \mathrm*{arg\,max}_{a \in A_t \cap \mathrm{Allowed}(K,s_t)}
 G_F(a \mid s_t,D_t,K),
 $$
 
@@ -193,10 +193,10 @@ UIERUs can be sequential, parallel, hierarchical, or federated. A parent unit ma
 For a delegated operation $x$, a conservative admission rule is:
 
 $$
-operatorname{Permit}(x) =
-operatorname{Permit}_{parent}(x) \land
-operatorname{Permit}_{child}(x) \land
-operatorname{Permit}_{environment}(x).
+\mathrm{Permit}(x) =
+\mathrm{Permit}_{parent}(x) \land
+\mathrm{Permit}_{child}(x) \land
+\mathrm{Permit}_{environment}(x).
 $$
 
 This is a simplified rule; real contracts may contain time, jurisdiction, data-use, purpose, and resource constraints.

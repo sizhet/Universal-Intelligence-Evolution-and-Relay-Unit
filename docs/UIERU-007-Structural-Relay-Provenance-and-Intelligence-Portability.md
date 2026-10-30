@@ -67,11 +67,11 @@ A recipient may import an informational record while refusing the other three la
 We can describe conditional portability as:
 
 $$
-operatorname{Portable}(a, B) =
-operatorname{Readable}(a,B) \land
-operatorname{Compatible}(a,B) \land
-operatorname{Authorized}(a,B) \land
-operatorname{Verifiable}(a,B)
+\mathrm{Portable}(a, B) =
+\mathrm{Readable}(a,B) \land
+\mathrm{Compatible}(a,B) \land
+\mathrm{Authorized}(a,B) \land
+\mathrm{Verifiable}(a,B)
 $$
 
 Here $a$ is a proposed artifact and $B$ a receiving context. This conjunction is a conceptual acceptance criterion, not a claim that each term has a universal numeric metric. Some artifacts can be retained as *reference-only* even when execution portability fails.
